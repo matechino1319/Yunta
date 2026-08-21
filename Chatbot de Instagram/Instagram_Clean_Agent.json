@@ -1,0 +1,377 @@
+{
+  "updatedAt": "2026-05-07T23:44:41.960Z",
+  "createdAt": "2026-05-07T15:55:44.881Z",
+  "id": "6f6aa7f0-9a0b-4f6f-8d7f-2b8d4a1d9001",
+  "name": "Instagram Clean Agent",
+  "description": "Webhook limpio para verificacion de Meta y respuesta automatica de Instagram con agente.",
+  "active": true,
+  "isArchived": false,
+  "nodes": [
+    {
+      "parameters": {
+        "multipleMethods": true,
+        "path": "ig",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "8db0b877-9208-4a0d-92b1-2a2d52a8e111",
+      "name": "IGIn",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        -1232,
+        80
+      ],
+      "webhookId": "igagentclean01"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "5a1f3d4c-c5a2-4619-b6a8-56b7cc875b10",
+                    "leftValue": "={{ $json.query[\"hub.challenge\"] || \"\" }}",
+                    "rightValue": "",
+                    "operator": {
+                      "type": "string",
+                      "operation": "notEmpty"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "verify"
+            }
+          ]
+        },
+        "options": {
+          "fallbackOutput": "extra",
+          "renameFallbackOutput": "event"
+        }
+      },
+      "id": "18b61a93-8d2d-48b9-8fdc-74ef68cd2222",
+      "name": "RouteWebhook",
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.4,
+      "position": [
+        -944,
+        80
+      ]
+    },
+    {
+      "parameters": {
+        "respondWith": "text",
+        "responseBody": "={{ $json.query[\"hub.challenge\"] }}",
+        "options": {
+          "responseCode": 200
+        }
+      },
+      "id": "7753d39b-2a5d-4897-8a43-c6ecce073333",
+      "name": "RespondVerify",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [
+        -688,
+        -48
+      ]
+    },
+    {
+      "parameters": {
+        "respondWith": "noData",
+        "options": {
+          "responseCode": 200
+        }
+      },
+      "id": "84ad0454-b494-4a8c-ae40-4f812f194444",
+      "name": "RespondEvent",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [
+        -688,
+        208
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "88bb8f39-aefe-4668-a65a-b471a7035555",
+              "name": "sender_id",
+              "value": "={{ $json.body?.entry?.[0]?.messaging?.[0]?.sender?.id || $json.body?.entry?.[0]?.changes?.[0]?.value?.sender?.id || $json.body?.entry?.[0]?.changes?.[0]?.value?.messages?.[0]?.from || \"\" }}",
+              "type": "string"
+            },
+            {
+              "id": "8c1f7761-1ad5-4a31-9b41-a06f0b4e6666",
+              "name": "message_text",
+              "value": "={{ $json.body?.entry?.[0]?.messaging?.[0]?.message?.text || $json.body?.entry?.[0]?.changes?.[0]?.value?.messages?.[0]?.text?.body || \"\" }}",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "id": "12fdd729-5848-4935-95be-e0b598797777",
+      "name": "ExtractMsg",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -432,
+        208
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "leftValue": "={{ $json.sender_id }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "notEmpty"
+              },
+              "id": "2d2b3a26-8cec-4518-a17d-f9ae25728888"
+            },
+            {
+              "leftValue": "={{ $json.message_text }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "notEmpty"
+              },
+              "id": "807ed263-84ea-4f5d-bb95-9e966a379999"
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "53c49a04-b860-41c8-bf6f-b4e29274aaaa",
+      "name": "HasMsg",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        -176,
+        208
+      ]
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.message_text }}",
+        "options": {
+          "systemMessage": "Sos el asistente de Instagram de Yunta2021. Responde en espanol rioplatense, breve y amable. Maximo 300 caracteres. Si saludan, saluda y pregunta en que podes ayudar. Si piden precio, pedi que te digan que producto buscan. Si no sabes algo, deci que lo revisan y responden en breve. Sin markdown."
+        }
+      },
+      "id": "92a8bd1b-9d73-421e-acb8-ab2b6e76bbbb",
+      "name": "IGAgent",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        80,
+        208
+      ]
+    },
+    {
+      "parameters": {
+        "model": "llama-3.1-8b-instant",
+        "options": {}
+      },
+      "id": "53850a57-e811-47d6-a925-f41ae2f8cccc",
+      "name": "GroqModel",
+      "type": "@n8n/n8n-nodes-langchain.lmChatGroq",
+      "typeVersion": 1,
+      "position": [
+        64,
+        448
+      ],
+      "credentials": {
+        "groqApi": {
+          "id": "HDpTi4GEioGhjAPS",
+          "name": "Groq account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://graph.instagram.com/v25.0/me/messages",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ { recipient: { id: $json.sender_id }, message: { text: $json.output || 'Hola, gracias por escribirnos.' } } }}",
+        "options": {}
+      },
+      "id": "e98c5c1c-4c4f-4fea-96c8-f4b9b9f4dddd",
+      "name": "ReplyIG",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        368,
+        208
+      ],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "IGHeaderAuth01",
+          "name": "Instagram Messaging Bearer"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "IGIn": {
+      "main": [
+        [
+          {
+            "node": "RouteWebhook",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "RouteWebhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "RouteWebhook": {
+      "main": [
+        [
+          {
+            "node": "RespondVerify",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "RespondEvent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "RespondEvent": {
+      "main": [
+        [
+          {
+            "node": "ExtractMsg",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ExtractMsg": {
+      "main": [
+        [
+          {
+            "node": "HasMsg",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HasMsg": {
+      "main": [
+        [
+          {
+            "node": "IGAgent",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        []
+      ]
+    },
+    "GroqModel": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "IGAgent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IGAgent": {
+      "main": [
+        [
+          {
+            "node": "ReplyIG",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "staticData": {},
+  "meta": {},
+  "pinData": {},
+  "versionId": "41a97867-20a1-4025-8e9c-2a461d7b5e55",
+  "activeVersionId": "41a97867-20a1-4025-8e9c-2a461d7b5e55",
+  "versionCounter": 31,
+  "triggerCount": 1,
+  "tags": [],
+  "shared": [
+    {
+      "updatedAt": "2026-05-07T15:55:44.894Z",
+      "createdAt": "2026-05-07T15:55:44.894Z",
+      "role": "workflow:owner",
+      "workflowId": "6f6aa7f0-9a0b-4f6f-8d7f-2b8d4a1d9001",
+      "projectId": "dOZjzJMGazSt9r8y",
+      "project": {
+        "updatedAt": "2026-03-31T18:06:50.146Z",
+        "createdAt": "2026-03-31T18:05:57.306Z",
+        "id": "dOZjzJMGazSt9r8y",
+        "name": "mateo Mateo Martinez <matemartinezalfaro@gmail.com>",
+        "type": "personal",
+        "icon": null,
+        "description": null,
+        "creatorId": "9555ddf8-c81c-4a16-8164-fda5ef843077"
+      }
+    }
+  ],
+  "versionMetadata": {
+    "name": "Version 41a97867",
+    "description": ""
+  }
+}

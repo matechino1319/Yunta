@@ -1,0 +1,178 @@
+{
+  "updatedAt": "2026-05-18T17:24:03.257Z",
+  "createdAt": "2026-05-18T13:44:21.715Z",
+  "id": "023e45c0-9538-428a-8a10-555bc33836ed",
+  "name": "Instagram Captador",
+  "description": "Workflow minimo para validar la callback URL de Meta antes de cargar el flujo completo.",
+  "active": true,
+  "isArchived": false,
+  "nodes": [
+    {
+      "parameters": {
+        "multipleMethods": true,
+        "path": "instagram-captador",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "b37bb9b2-ad7a-4c80-9e08-39a982d5b5f8",
+      "name": "Webhook Captador",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        -848,
+        80
+      ],
+      "webhookId": "instagramcaptadorhook01"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "ed93d7ae-055c-4c82-9d77-aa3be55cddc4",
+                    "leftValue": "={{ $json.query[\"hub.challenge\"] || \"\" }}",
+                    "rightValue": "",
+                    "operator": {
+                      "type": "string",
+                      "operation": "notEmpty"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "verify"
+            }
+          ]
+        },
+        "options": {
+          "fallbackOutput": "extra",
+          "renameFallbackOutput": "event"
+        }
+      },
+      "id": "e3ad6df7-24cf-4d6c-9e77-dfde9c382d71",
+      "name": "Route Captador",
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.4,
+      "position": [
+        -640,
+        96
+      ]
+    },
+    {
+      "parameters": {
+        "respondWith": "text",
+        "responseBody": "={{ $json.query[\"hub.challenge\"] }}",
+        "options": {
+          "responseCode": 200
+        }
+      },
+      "id": "f4b3666e-a805-4ad7-a085-8525a76ff534",
+      "name": "Respond Verify",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [
+        -336,
+        -16
+      ]
+    },
+    {
+      "parameters": {
+        "respondWith": "noData",
+        "options": {
+          "responseCode": 200
+        }
+      },
+      "id": "ba6fdc0d-354b-42bb-ba81-c9d57564b638",
+      "name": "Respond Event",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [
+        -336,
+        176
+      ]
+    }
+  ],
+  "connections": {
+    "Webhook Captador": {
+      "main": [
+        [
+          {
+            "node": "Route Captador",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Route Captador",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Route Captador": {
+      "main": [
+        [
+          {
+            "node": "Respond Verify",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Respond Event",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "staticData": {},
+  "meta": {},
+  "pinData": {},
+  "versionId": "f97fb987-f314-44e4-ab43-b098bffd88e9",
+  "activeVersionId": "33cbc331-373d-40d1-852c-f4b09d5947e2",
+  "versionCounter": 14,
+  "triggerCount": 1,
+  "tags": [],
+  "shared": [
+    {
+      "updatedAt": "2026-05-18T13:44:21.716Z",
+      "createdAt": "2026-05-18T13:44:21.716Z",
+      "role": "workflow:owner",
+      "workflowId": "023e45c0-9538-428a-8a10-555bc33836ed",
+      "projectId": "dOZjzJMGazSt9r8y",
+      "project": {
+        "updatedAt": "2026-03-31T18:06:50.146Z",
+        "createdAt": "2026-03-31T18:05:57.306Z",
+        "id": "dOZjzJMGazSt9r8y",
+        "name": "mateo Mateo Martinez <matemartinezalfaro@gmail.com>",
+        "type": "personal",
+        "icon": null,
+        "description": null,
+        "creatorId": "9555ddf8-c81c-4a16-8164-fda5ef843077"
+      }
+    }
+  ],
+  "versionMetadata": {
+    "name": null,
+    "description": null
+  }
+}

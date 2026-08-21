@@ -1,0 +1,2048 @@
+{
+  "updatedAt": "2026-05-20T14:43:00.144Z",
+  "createdAt": "2026-03-31T22:44:18.448Z",
+  "id": "SkTseyHBfouDWODw",
+  "name": "My workflow",
+  "description": null,
+  "active": true,
+  "isArchived": false,
+  "nodes": [
+    {
+      "parameters": {
+        "updates": [
+          "com.twilio.messaging.inbound-message.received"
+        ]
+      },
+      "type": "n8n-nodes-base.twilioTrigger",
+      "typeVersion": 1,
+      "position": [
+        -5760,
+        416
+      ],
+      "id": "5a7ed1b5-7927-4e03-b82c-93f0344282c0",
+      "name": "Twilio Trigger",
+      "webhookId": "16c4f4a1-004e-4064-aed6-8f66c1394a01",
+      "alwaysOutputData": false,
+      "executeOnce": false,
+      "credentials": {
+        "twilioApi": {
+          "id": "5Xf6hpN14H9ydg8r",
+          "name": "Twilio account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "from": "+14155238886",
+        "to": "={{ $('Twilio Trigger').item.json.data.from.replace('whatsapp:', '') }}",
+        "toWhatsapp": true,
+        "message": "={{ $json.output }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.twilio",
+      "typeVersion": 1,
+      "position": [
+        1648,
+        48
+      ],
+      "id": "8c1ee7f1-c9e8-44b7-a299-cfde4d50569f",
+      "name": "Send an SMS/MMS/WhatsApp message",
+      "credentials": {
+        "twilioApi": {
+          "id": "5Xf6hpN14H9ydg8r",
+          "name": "Twilio account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.agent }}",
+                    "rightValue": "internet",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "03c55557-c669-46eb-a926-78437bd73c41"
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "bc40c9fb-2f50-4028-a601-ada3bb281812",
+                    "leftValue": "={{ $json.agent }}",
+                    "rightValue": "caja",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "92e0383a-6627-4e4e-8a7d-a581b201bad6",
+                    "leftValue": "={{ $json.agent }}",
+                    "rightValue": "transferencia",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "4f41202b-7466-42c0-8c8b-c84726c0700a",
+                    "leftValue": "={{ $json.agent }}",
+                    "rightValue": "carga_articulo",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "6f44c72e-5356-4292-9b8f-9718bb080db8",
+                    "leftValue": "={{ $json.agent }}",
+                    "rightValue": "tesoreria_compras",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "a9620aa2-2679-4645-897c-213f23f44142",
+                    "leftValue": "={{ $json.agent }}",
+                    "rightValue": "impresora",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.4,
+      "position": [
+        -3840,
+        832
+      ],
+      "id": "6de3d994-bd39-4424-bd3e-de3ee3f75a24",
+      "name": "Switch"
+    },
+    {
+      "parameters": {
+        "model": "llama-3.1-8b-instant",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGroq",
+      "typeVersion": 1,
+      "position": [
+        -736,
+        -1168
+      ],
+      "id": "e554edbd-edac-42f6-913b-988cb6088ad6",
+      "name": "Groq Chat Model1",
+      "credentials": {
+        "groqApi": {
+          "id": "HDpTi4GEioGhjAPS",
+          "name": "Groq account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": "llama-3.1-8b-instant",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGroq",
+      "typeVersion": 1,
+      "position": [
+        -736,
+        -624
+      ],
+      "id": "de346c39-325c-4f43-9184-193791b369a7",
+      "name": "Groq Chat Model2",
+      "credentials": {
+        "groqApi": {
+          "id": "HDpTi4GEioGhjAPS",
+          "name": "Groq account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": "llama-3.1-8b-instant",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGroq",
+      "typeVersion": 1,
+      "position": [
+        -736,
+        -80
+      ],
+      "id": "408fbeaa-5549-4b30-a57e-2a64139fe973",
+      "name": "Groq Chat Model3",
+      "credentials": {
+        "groqApi": {
+          "id": "HDpTi4GEioGhjAPS",
+          "name": "Groq account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": "llama-3.1-8b-instant",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGroq",
+      "typeVersion": 1,
+      "position": [
+        -768,
+        400
+      ],
+      "id": "e8ce7b93-179d-40ae-bbdf-911786d61d46",
+      "name": "Groq Chat Model4",
+      "credentials": {
+        "groqApi": {
+          "id": "HDpTi4GEioGhjAPS",
+          "name": "Groq account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": "llama-3.1-8b-instant",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGroq",
+      "typeVersion": 1,
+      "position": [
+        -784,
+        1760
+      ],
+      "id": "e227ec22-cd69-4e30-bd79-ba8fa338ce0d",
+      "name": "Groq Chat Model5",
+      "credentials": {
+        "groqApi": {
+          "id": "HDpTi4GEioGhjAPS",
+          "name": "Groq account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": "llama-3.1-8b-instant",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGroq",
+      "typeVersion": 1,
+      "position": [
+        -768,
+        896
+      ],
+      "id": "155b3340-f806-416d-bfaa-226b1d4ecdc3",
+      "name": "Groq Chat Model6",
+      "credentials": {
+        "groqApi": {
+          "id": "HDpTi4GEioGhjAPS",
+          "name": "Groq account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.Body }}",
+        "options": {
+          "systemMessage": "=Sos un asistente de soporte tecnico interno. Ayudas con problemas de internet y red.\nHablas de forma amigable y natural, como un companero de sistemas.\nHace UNA sola pregunta o paso a la vez, espera la respuesta antes de continuar.\nMaximo 300 caracteres por mensaje. Sin markdown, texto plano.\n\nObjetivo:\nNo respondas de forma mecanica. Primero interpreta lo que dijo el usuario y responde a eso. Despues, si hace falta, continua con el siguiente paso del diagnostico.\n\nRegla de contexto obligatoria:\nSi el usuario responde una pregunta con informacion util, usa esa informacion para decidir el siguiente paso. No saltes a otra pregunta ignorando lo que te dijo.\nPor ejemplo:\n- si dice que el problema es en todas, orienta a router o red general\n- si dice que es solo en una, orienta a cable o configuracion local\n- si dice que ya reinicio, no repitas esa pregunta\n- si menciona un error, pedi el texto exacto\n- si cuenta que sigue sin funcionar, continua el diagnostico desde ese punto\n\nSegui este flujo:\n1. Pregunta si el problema es solo en una computadora o en todas.\nSi es solo en una: indica verificar cable de red, desactivar y activar la conexion y ejecutar ipconfig /flushdns.\nSi es en todas: indica reiniciar el router, revisar si tiene luz roja y verificar con el celular.\n2. Pregunta si el cable de red esta bien conectado.\n3. Pregunta si reinicio el router desenchufandolo 30 segundos.\n4. Pregunta si el router tiene alguna luz roja o apagada.\n5. Pregunta si funciona internet en el celular con WiFi de la empresa.\n6. Si no se resuelve, responde exactamente: \"Contacta a Sistemas: +54900000003\".\n\nReglas de cierre:\nSolo des por solucionado el caso si el usuario dice claramente que ya quedo resuelto.\nSi el mensaje incluye problema pendiente, no lo tomes como resuelto.\nSi el usuario responde solamente con no o sigue describiendo el problema, continua el diagnostico. No cierres el caso.\nSi el mensaje del usuario contiene palabras o ideas como: pero, sigue, no, error, falla, fallando, todavia, aun, tampoco, nunca, no anda, no funciona, no conecta, no carga, no responde, no se soluciono; entonces NO cierres el caso, aunque el mensaje tambien empiece con si.\n\nMensaje del usuario: {{ $json.Body }}\n\nDespues de cada paso o indicacion que des, termina el mensaje con: Se soluciono?\nSi el usuario confirma claramente que ya se soluciono, responde exactamente: \"Perfecto, me alegra que se haya solucionado. Si necesitas otra cosa, escribime.\"\nSi el usuario responde que no y ya probaste los pasos principales, responde exactamente: \"Contacta a Sistemas: +54900000003\"."
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        -736,
+        -1440
+      ],
+      "id": "b5573da1-dfb0-45ac-8e8f-808a70ffc6ec",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.Body }}",
+        "options": {
+          "systemMessage": "=Sos un asistente de soporte tecnico interno. Ayudas con problemas de caja y computadora.\nHablas de forma amigable y natural, como un companero de sistemas.\nEn este negocio, la caja y la computadora son lo mismo.\nNo mezcles preguntas de impresora, internet, red u otros modulos salvo que el usuario lo mencione explicitamente.\nHace UNA sola pregunta o paso a la vez. Maximo 300 caracteres por mensaje. Sin markdown, texto plano.\n\nObjetivo:\nNo respondas de forma mecanica. Primero interpreta lo que dijo el usuario y responde a eso. Despues, si hace falta, continua con el siguiente paso del diagnostico.\n\nRegla de contexto obligatoria:\nSi el usuario responde una pregunta con informacion util, usa esa informacion para decidir el siguiente paso. No saltes a otra pregunta ignorando lo que te dijo.\nPor ejemplo:\n- si dice que ya reinicio, no repitas esa pregunta\n- si menciona un error, pedi el texto exacto\n- si dice que no abre el sistema, orienta a abrir como administrador\n- si dice que sigue fallando, continua desde ese punto\n- si cuenta que pasa en todas las cajas, orienta a un problema general\n\nSegui este flujo:\n1. Pregunta que pasa exactamente en la caja/computadora: no abre el sistema, no toma el QR, no deja registrar una venta, no guarda una transferencia, esta lenta o tira error.\n2. Si aparece un error, pedi el texto exacto del error.\n3. Pregunta si reinicio la caja/computadora y el sistema.\n4. Pregunta si pasa solo en esa caja o en todas.\n5. Si el sistema no abre, indica abrirlo como administrador.\n6. Si empezo despues de una actualizacion o cambio, preguntalo.\n7. Si no se resuelve, responde exactamente: \"Contacta a Sistemas: +54900000003\".\n\nReglas de cierre:\nSolo des por solucionado el caso si el usuario dice claramente que ya quedo resuelto.\nSi el mensaje incluye problema pendiente, no lo tomes como resuelto.\nSi el usuario responde solamente con no o sigue describiendo el problema, continua el diagnostico. No cierres el caso.\nSi el mensaje del usuario contiene palabras o ideas como: pero, sigue, no, error, falla, fallando, todavia, aun, tampoco, nunca, no anda, no funciona, no abre, no carga, no toma, no registra, no responde, no se soluciono; entonces NO cierres el caso, aunque el mensaje tambien empiece con si.\n\nMensaje del usuario: {{ $json.Body }}\n\nDespues de cada paso o indicacion que des, termina el mensaje con: Se soluciono?\nSi el usuario confirma claramente que ya se soluciono, responde exactamente: \"Perfecto, me alegra que se haya solucionado. Si necesitas otra cosa, escribime.\"\nSi el usuario responde que no y ya probaste los pasos principales, responde exactamente: \"Contacta a Sistemas: +54900000003\"."
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        -736,
+        -896
+      ],
+      "id": "ea1d058d-f06c-481b-8ea5-f196d73b2f58",
+      "name": "AI Agent1"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.Body }}\n \n",
+        "options": {
+          "systemMessage": "=Sos un asistente de soporte tecnico interno. Ayudas con solicitudes de transferencia.\nHablas de forma clara y formal.\nMaximo 300 caracteres por mensaje. Sin markdown, texto plano.\n\nSegui este flujo exacto:\n1. La primera pregunta siempre tiene que ser exactamente: \"Lo envio al Gmail?\"\n2. Si responde que si, responde exactamente: \"Lo derivamos a Sistemas: +54900000003\"\n3. Si responde que no, responde exactamente: \"Por favor, envielo a sistemas@empresa.com. Cuando lo haya enviado, aviseme. Lo envio?\"\n4. Si despues de eso responde que si, responde exactamente: \"Lo derivamos a Sistemas: +54900000003\"\n5. Si despues de eso responde que no, volve a responder exactamente: \"Por favor, envielo a sistemas@empresa.com. Cuando lo haya enviado, aviseme. Lo envio?\"\n6. Repeti el paso 5 todas las veces que haga falta hasta que responda que si.\n\nNo agregues nada mas. No hagas otras preguntas. No agregues 'Se soluciono?' en este modulo.\n\nMensaje del usuario: {{ $json.Body }}"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        -736,
+        -384
+      ],
+      "id": "ce55357e-6c92-445e-a548-8cb05c9aa78c",
+      "name": "AI Agent2"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.Body }}\n \n",
+        "options": {
+          "systemMessage": "=Sos un asistente de soporte tecnico interno. Ayudas con solicitudes de carga de articulos.\nHablas de forma clara y formal.\nMaximo 300 caracteres por mensaje. Sin markdown, texto plano.\n\nResponde SIEMPRE exactamente:\n\"La carga de articulos la gestiona Sistemas directamente. Contacta a Sistemas: +54900000003\"\n\nNo agregues nada mas.\n\nMensaje del usuario: {{ $json.Body }}"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        -768,
+        128
+      ],
+      "id": "4618356b-c06a-473a-baf5-aeb65634d6be",
+      "name": "AI Agent3"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.Body }}",
+        "options": {
+          "systemMessage": "=Sos un asistente de soporte tecnico interno. Ayudas con problemas de impresora.\nHablas de forma amigable y natural, como un companero de sistemas.\nHace UNA sola pregunta o paso a la vez, espera la respuesta antes de continuar.\nMaximo 300 caracteres por mensaje. Sin markdown, texto plano.\n\nObjetivo:\nNo respondas de forma mecanica. Primero interpreta lo que dijo el usuario y responde a eso. Despues, si hace falta, continua con el siguiente paso del diagnostico.\n\nRegla de contexto obligatoria:\nSi el usuario responde una pregunta con informacion util, usa esa informacion para decidir el siguiente paso. No saltes a otra pregunta ignorando lo que te dijo.\nPor ejemplo:\n- si dice que hay trabajos atascados, indica borrar la cola de impresion y reiniciar la impresora, y despues pregunta si se soluciono\n- si dice que la impresora tiene luz, pasa al siguiente chequeo util\n- si dice que hay una luz de error o que parpadea, pedile que diga cual luz y derivalo si hace falta\n- si dice que no aparece en Windows, orienta a revisar conexion o reinstalarla\n- si dice que sigue sin imprimir, continua desde ese punto\n\nSegui estos pasos en orden segun las respuestas:\n1. Pregunta si la impresora tiene luz encendida.\n2. Pregunta si reinicio la impresora y la computadora.\n3. Pregunta si el cable USB o de red esta bien conectado en ambos extremos.\n4. Pregunta si la impresora aparece en Windows en Configuracion > Dispositivos > Impresoras.\n5. Pregunta si hay trabajos atascados en la cola de impresion.\nSi hay trabajos atascados, indica vaciar la cola de impresion y reiniciar la impresora.\n6. Pregunta si la impresora muestra algun error o parpadea alguna luz.\n7. Pregunta si el papel esta bien cargado y no hay papel atascado.\n8. Indica intentar imprimir una pagina de prueba desde Windows.\n9. Si no se resuelve, responde exactamente: \"No pudimos resolver el problema. Contacta a Sistemas: +54900000003\".\n\nReglas de cierre:\nSolo des por solucionado el caso si el usuario dice claramente que ya quedo resuelto.\nSi el mensaje incluye problema pendiente, no lo tomes como resuelto.\nSi el usuario responde solamente con no o sigue describiendo el problema, continua el diagnostico. No cierres el caso.\nSi el mensaje del usuario contiene palabras o ideas como: pero, sigue, no, error, falla, fallando, todavia, aun, tampoco, nunca, no anda, no funciona, no imprime, no abre, no responde, no se soluciono; entonces NO cierres el caso, aunque el mensaje tambien empiece con si.\n\nMensaje del usuario: {{ $json.Body }}\n\nDespues de cada paso o indicacion que des, termina el mensaje con: Se soluciono?\nSi el usuario confirma claramente que ya se soluciono, responde exactamente: \"Perfecto, me alegra que se haya solucionado. Si necesitas otra cosa, escribime.\"\nSi el usuario responde que no y ya probaste los pasos principales, responde exactamente: \"No pudimos resolver el problema. Contacta a Sistemas: +54900000003\"."
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        -768,
+        1312
+      ],
+      "id": "7d84824a-38c9-4d2c-b7f9-6b228fa17d5a",
+      "name": "AI Agent4"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.Body }}\n \n",
+        "options": {
+          "systemMessage": "=Sos un asistente de soporte tecnico interno. Ayudas con consultas de tesoreria y compras.\nHablas de forma clara y formal.\nMaximo 300 caracteres por mensaje. Sin markdown, texto plano.\n\nResponde SIEMPRE exactamente:\n\"Para Tesoreria comunicate al +54900000011. Para Compras comunicate al +54900000012.\"\n\nNo agregues nada mas.\n\nMensaje del usuario: {{ $json.Body }}"
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        -768,
+        608
+      ],
+      "id": "e9d556c6-ba1a-4dc2-b369-ababd75046d9",
+      "name": "AI Agent5"
+    },
+    {
+      "parameters": {
+        "sessionIdType": "customKey",
+        "sessionKey": "={{ $json.sessionId }}"
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryPostgresChat",
+      "typeVersion": 1.3,
+      "position": [
+        -624,
+        880
+      ],
+      "id": "111cc7ab-bee0-474c-9772-135761b65351",
+      "name": "Postgres Chat Memory",
+      "credentials": {
+        "postgres": {
+          "id": "CK7pccnEapFoN9ET",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sessionIdType": "customKey",
+        "sessionKey": "={{ $json.sessionId }}"
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryPostgresChat",
+      "typeVersion": 1.3,
+      "position": [
+        -656,
+        1744
+      ],
+      "id": "98623c65-4da3-4b66-a4a6-f74d6183c998",
+      "name": "Postgres Chat Memory1",
+      "credentials": {
+        "postgres": {
+          "id": "CK7pccnEapFoN9ET",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sessionIdType": "customKey",
+        "sessionKey": "={{ $json.sessionId }}"
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryPostgresChat",
+      "typeVersion": 1.3,
+      "position": [
+        -656,
+        400
+      ],
+      "id": "1153daa9-0b29-4cc1-bd3d-082e0ab7b8b8",
+      "name": "Postgres Chat Memory2",
+      "credentials": {
+        "postgres": {
+          "id": "CK7pccnEapFoN9ET",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sessionIdType": "customKey",
+        "sessionKey": "={{ $json.sessionId }}"
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryPostgresChat",
+      "typeVersion": 1.3,
+      "position": [
+        -624,
+        -96
+      ],
+      "id": "93bb344d-c731-4081-8e62-716c128f9bd6",
+      "name": "Postgres Chat Memory3",
+      "credentials": {
+        "postgres": {
+          "id": "CK7pccnEapFoN9ET",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sessionIdType": "customKey",
+        "sessionKey": "={{ $json.sessionId }}"
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryPostgresChat",
+      "typeVersion": 1.3,
+      "position": [
+        -592,
+        -624
+      ],
+      "id": "8542a757-c926-4e11-913a-6426f70b704b",
+      "name": "Postgres Chat Memory4",
+      "credentials": {
+        "postgres": {
+          "id": "CK7pccnEapFoN9ET",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "sessionIdType": "customKey",
+        "sessionKey": "={{ $json.sessionId }}"
+      },
+      "type": "@n8n/n8n-nodes-langchain.memoryPostgresChat",
+      "typeVersion": 1.3,
+      "position": [
+        -576,
+        -1168
+      ],
+      "id": "091317b7-c117-4449-8b17-f77606bf758b",
+      "name": "Postgres Chat Memory5",
+      "credentials": {
+        "postgres": {
+          "id": "CK7pccnEapFoN9ET",
+          "name": "Postgres account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "99b37432-711d-4b9e-b264-d0f1746c0aa1",
+              "name": "sessionId",
+              "value": "={{ $('Twilio Trigger').item.json.data.from }}",
+              "type": "string"
+            },
+            {
+              "id": "57a04580-7238-41dd-9339-99872f909199",
+              "name": "Body",
+              "value": "={{ $('Twilio Trigger').item.json.data.body }}",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -1568,
+        1456
+      ],
+      "id": "6fcdd6c9-b01b-429c-8c14-d981ffc4aa79",
+      "name": "Edit Fields"
+    },
+    {
+      "parameters": {
+        "url": "=https://hjiqmfjtjfxiqoevoirf.supabase.co/rest/v1/active_sessions?phone=eq.{{ encodeURIComponent($('Twilio Trigger').item.json.data.from) }}&updated_at=gte.{{ encodeURIComponent(new Date(Date.now() - 10 * 60 * 1000).toISOString()) }}&order=updated_at.desc&limit=1",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "apikey",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhqaXFtZmp0amZ4aXFvZXZvaXJmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc3NjUxOTMsImV4cCI6MjA5MzM0MTE5M30.4d4ONuoWQDHcTS64bQU1tAF8-C5rr7L8sI7m70vG7sY"
+            },
+            {
+              "name": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhqaXFtZmp0amZ4aXFvZXZvaXJmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc3NjUxOTMsImV4cCI6MjA5MzM0MTE5M30.4d4ONuoWQDHcTS64bQU1tAF8-C5rr7L8sI7m70vG7sY"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        -5520,
+        432
+      ],
+      "id": "c4b5afde-c46e-43e4-91a4-78f14c26b78d",
+      "name": "HTTP Request",
+      "alwaysOutputData": true
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $('Twilio Trigger').item.json.data.body }}",
+        "options": {
+          "systemMessage": "Sos el asistente de soporte tecnico interno de la empresa.\n\nTu unica tarea es mostrar el menu de opciones cada vez que el usuario escriba.\n\nResponde SIEMPRE con este mensaje exacto, sin agregar nada mas:\n\nBuenas! Soy el asistente de soporte tecnico.\n\nCon que necesitas ayuda hoy?\n\n1. Impresora\n2. Internet / Red\n3. Caja / Computadora\n4. Transferencia\n5. Carga de articulos\n7. Tesoreria / Compras\n\nResponde con el numero de tu opcion."
+        }
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        -5136,
+        832
+      ],
+      "id": "7ef53607-61d3-46f8-a8fd-28f21ca2b49a",
+      "name": "AI Agent6"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $('Twilio Trigger').item.json.data.body }}",
+                    "rightValue": "1",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "bbb5e17f-503f-4156-9bd1-dfb1210da6af"
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "a0014be3-5565-4f1d-a58a-4b6ea7949a8a",
+                    "leftValue": "={{ $('Twilio Trigger').item.json.data.body }}",
+                    "rightValue": "2",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "50f05352-1a73-4593-a951-a9bd23a7926f",
+                    "leftValue": "={{ $('Twilio Trigger').item.json.data.body }}",
+                    "rightValue": "3",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "42cfb59f-dd81-49ec-a319-f8001d541729",
+                    "leftValue": "={{ $('Twilio Trigger').item.json.data.body }}",
+                    "rightValue": "4",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "60cf4b9f-8e05-49b5-89ae-d34038a3fa3c",
+                    "leftValue": "={{ $('Twilio Trigger').item.json.data.body }}",
+                    "rightValue": "5",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "fe8b413d-6c13-4b77-b7f9-64329638f962",
+                    "leftValue": "={{ $('Twilio Trigger').item.json.data.body }}",
+                    "rightValue": "6",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  },
+                  {
+                    "id": "teso-7",
+                    "leftValue": "={{ $('Twilio Trigger').item.json.data.body }}",
+                    "rightValue": "7",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ],
+                "combinator": "or"
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.4,
+      "position": [
+        -2736,
+        -2784
+      ],
+      "id": "7eef0c2c-0056-417d-b793-34728c1a178c",
+      "name": "Switch1"
+    },
+    {
+      "parameters": {
+        "model": "llama-3.1-8b-instant",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatGroq",
+      "typeVersion": 1,
+      "position": [
+        -3088,
+        80
+      ],
+      "id": "dd176f99-f6f8-4b58-b1e0-afaf63cfe529",
+      "name": "Groq Chat Model",
+      "credentials": {
+        "groqApi": {
+          "id": "HDpTi4GEioGhjAPS",
+          "name": "Groq account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "99b37432-711d-4b9e-b264-d0f1746c0aa1",
+              "name": "sessionId",
+              "value": "={{ $('Twilio Trigger').item.json.data.from }}",
+              "type": "string"
+            },
+            {
+              "id": "57a04580-7238-41dd-9339-99872f909199",
+              "name": "Body",
+              "value": "={{ $('Twilio Trigger').item.json.data.body }}",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -1552,
+        960
+      ],
+      "id": "7a8068ff-2f6b-452a-a6a7-ffaae1dee3ae",
+      "name": "Edit Fields6"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "99b37432-711d-4b9e-b264-d0f1746c0aa1",
+              "name": "sessionId",
+              "value": "={{ $('Twilio Trigger').item.json.data.from }}",
+              "type": "string"
+            },
+            {
+              "id": "57a04580-7238-41dd-9339-99872f909199",
+              "name": "Body",
+              "value": "={{ $('Twilio Trigger').item.json.data.body }}",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -1552,
+        656
+      ],
+      "id": "9bb9857f-a917-4f4b-8956-01b0d577cfff",
+      "name": "Edit Fields1"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "99b37432-711d-4b9e-b264-d0f1746c0aa1",
+              "name": "sessionId",
+              "value": "={{ $('Twilio Trigger').item.json.data.from }}",
+              "type": "string"
+            },
+            {
+              "id": "57a04580-7238-41dd-9339-99872f909199",
+              "name": "Body",
+              "value": "={{ $('Twilio Trigger').item.json.data.body }}",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -1520,
+        352
+      ],
+      "id": "ac1d5631-fab6-45d5-96df-89cb09e9f978",
+      "name": "Edit Fields2"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "99b37432-711d-4b9e-b264-d0f1746c0aa1",
+              "name": "sessionId",
+              "value": "={{ $('Twilio Trigger').item.json.data.from }}",
+              "type": "string"
+            },
+            {
+              "id": "57a04580-7238-41dd-9339-99872f909199",
+              "name": "Body",
+              "value": "={{ $('Twilio Trigger').item.json.data.body }}",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -1536,
+        -368
+      ],
+      "id": "bc11f315-95cc-449b-a344-96914b19979e",
+      "name": "Edit Fields3"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "99b37432-711d-4b9e-b264-d0f1746c0aa1",
+              "name": "sessionId",
+              "value": "={{ $('Twilio Trigger').item.json.data.from }}",
+              "type": "string"
+            },
+            {
+              "id": "57a04580-7238-41dd-9339-99872f909199",
+              "name": "Body",
+              "value": "={{ $('Twilio Trigger').item.json.data.body }}",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -1536,
+        80
+      ],
+      "id": "7cdd5861-748a-4c19-9048-990586f6eef4",
+      "name": "Edit Fields4"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.agent }}",
+                    "rightValue": "handoff",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "handoff-agent"
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $('Twilio Trigger').item.json.data.body }}",
+                    "rightValue": "1",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "menu-1"
+                  },
+                  {
+                    "leftValue": "={{ $('Twilio Trigger').item.json.data.body }}",
+                    "rightValue": "2",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "menu-2"
+                  },
+                  {
+                    "leftValue": "={{ $('Twilio Trigger').item.json.data.body }}",
+                    "rightValue": "3",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "menu-3"
+                  },
+                  {
+                    "leftValue": "={{ $('Twilio Trigger').item.json.data.body }}",
+                    "rightValue": "4",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "menu-4"
+                  },
+                  {
+                    "leftValue": "={{ $('Twilio Trigger').item.json.data.body }}",
+                    "rightValue": "5",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "menu-5"
+                  },
+                  {
+                    "leftValue": "={{ $('Twilio Trigger').item.json.data.body }}",
+                    "rightValue": "6",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "menu-6"
+                  },
+                  {
+                    "leftValue": "={{ $('Twilio Trigger').item.json.data.body }}",
+                    "rightValue": "7",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "menu-7"
+                  }
+                ],
+                "combinator": "or"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.agent }}",
+                    "rightValue": "",
+                    "operator": {
+                      "type": "string",
+                      "operation": "notEmpty",
+                      "singleValue": true
+                    },
+                    "id": "agent-not-empty"
+                  },
+                  {
+                    "leftValue": "={{ $json.agent }}",
+                    "rightValue": "menu",
+                    "operator": {
+                      "type": "string",
+                      "operation": "notEquals"
+                    },
+                    "id": "agent-not-menu"
+                  },
+                  {
+                    "leftValue": "={{ $json.agent }}",
+                    "rightValue": "handoff",
+                    "operator": {
+                      "type": "string",
+                      "operation": "notEquals"
+                    },
+                    "id": "agent-not-handoff"
+                  }
+                ],
+                "combinator": "and"
+              }
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $('Twilio Trigger').item.json.data.body }}",
+                    "rightValue": "gracias",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "reset-gracias"
+                  },
+                  {
+                    "leftValue": "={{ $('Twilio Trigger').item.json.data.body }}",
+                    "rightValue": "listo",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "reset-listo"
+                  },
+                  {
+                    "leftValue": "={{ $('Twilio Trigger').item.json.data.body }}",
+                    "rightValue": "ok",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "reset-ok"
+                  },
+                  {
+                    "leftValue": "={{ $('Twilio Trigger').item.json.data.body }}",
+                    "rightValue": "menu",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals"
+                    },
+                    "id": "reset-menu"
+                  },
+                  {
+                    "leftValue": "={{ $('Twilio Trigger').item.json.data.body }}",
+                    "rightValue": "otra cosa",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    },
+                    "id": "reset-otra-cosa"
+                  }
+                ],
+                "combinator": "or"
+              }
+            }
+          ]
+        },
+        "options": {
+          "fallbackOutput": "extra"
+        }
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.4,
+      "position": [
+        -5248,
+        368
+      ],
+      "id": "d2c92ca1-fb9e-404f-ba70-2e4556ea3088",
+      "name": "Switch2"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "c2eedf06-4f4f-4de8-bfb0-60eefc2b9288",
+              "name": "output",
+              "value": "Te derivamos con un operador. En breve te respondemos por este mismo WhatsApp.",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1184,
+        -240
+      ],
+      "id": "2ff879ec-8ed0-4774-9521-5d864f3991b9",
+      "name": "Set Handoff Message"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "22f44c27-878b-41a8-9c48-1e110acb2c36",
+              "name": "output",
+              "value": "Tu caso ya fue derivado a un operador. En breve te respondemos por este mismo WhatsApp.",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -2720,
+        96
+      ],
+      "id": "9d70c878-17ca-4899-8c45-b0399dfa453a",
+      "name": "Set Handoff Waiting"
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": false,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.output || '' }}",
+                    "rightValue": "Contacta a Sistemas:",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    },
+                    "id": "handoff-contacta"
+                  },
+                  {
+                    "leftValue": "={{ $json.output || '' }}",
+                    "rightValue": "Lo derivamos a Sistemas:",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    },
+                    "id": "handoff-derivamos"
+                  },
+                  {
+                    "leftValue": "={{ $json.output || '' }}",
+                    "rightValue": "No pudimos resolver el problema",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    },
+                    "id": "handoff-no-pudimos"
+                  }
+                ],
+                "combinator": "or"
+              }
+            }
+          ]
+        },
+        "options": {
+          "fallbackOutput": "extra"
+        }
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.4,
+      "position": [
+        896,
+        48
+      ],
+      "id": "1ebeaae7-8ca1-4c89-9af5-9f5ac0c2635d",
+      "name": "Detect Handoff"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://hjiqmfjtjfxiqoevoirf.supabase.co/rest/v1/active_sessions?on_conflict=phone",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "apikey",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhqaXFtZmp0amZ4aXFvZXZvaXJmIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3Nzc2NTE5MywiZXhwIjoyMDkzMzQxMTkzfQ.Ioh9cKAPuxYYp2-qG7uZmvUefICtmuvBUDvcWr4wfEI"
+            },
+            {
+              "name": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhqaXFtZmp0amZ4aXFvZXZvaXJmIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3Nzc2NTE5MywiZXhwIjoyMDkzMzQxMTkzfQ.Ioh9cKAPuxYYp2-qG7uZmvUefICtmuvBUDvcWr4wfEI"
+            },
+            {
+              "name": "Prefer",
+              "value": "resolution=merge-duplicates,return=representation"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ { phone: $('Twilio Trigger').item.json.data.from, agent: 'handoff', updated_at: new Date().toISOString() } }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        1184,
+        -48
+      ],
+      "id": "0db98796-c12c-4c3a-a121-466ba879c2f7",
+      "name": "Upsert Handoff Session"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "sel-phone",
+              "name": "phone",
+              "value": "={{ $('Twilio Trigger').item.json.data.from }}",
+              "type": "string"
+            },
+            {
+              "id": "sel-agent",
+              "name": "agent",
+              "value": "={{ ({'1':'impresora','2':'internet','3':'caja','4':'transferencia','5':'carga_articulo','6':'tesoreria_compras','7':'tesoreria_compras'})[$('Twilio Trigger').item.json.data.body] || 'menu' }}",
+              "type": "string"
+            },
+            {
+              "id": "sel-updated",
+              "name": "updated_at",
+              "value": "={{ new Date().toISOString() }}",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -4224,
+        416
+      ],
+      "id": "6fa4f6d7-cc84-4a04-8c8f-2c731a4d01a1",
+      "name": "Set Selected Agent"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://hjiqmfjtjfxiqoevoirf.supabase.co/rest/v1/active_sessions?on_conflict=phone",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "apikey",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhqaXFtZmp0amZ4aXFvZXZvaXJmIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3Nzc2NTE5MywiZXhwIjoyMDkzMzQxMTkzfQ.Ioh9cKAPuxYYp2-qG7uZmvUefICtmuvBUDvcWr4wfEI"
+            },
+            {
+              "name": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhqaXFtZmp0amZ4aXFvZXZvaXJmIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3Nzc2NTE5MywiZXhwIjoyMDkzMzQxMTkzfQ.Ioh9cKAPuxYYp2-qG7uZmvUefICtmuvBUDvcWr4wfEI"
+            },
+            {
+              "name": "Prefer",
+              "value": "resolution=merge-duplicates,return=representation"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ { phone: $json.phone, agent: $json.agent, updated_at: $json.updated_at } }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        -3968,
+        432
+      ],
+      "id": "2a8f5af9-25d7-4e75-8528-e66fec6c2c16",
+      "name": "Upsert Selected Agent Session"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "menu-phone",
+              "name": "phone",
+              "value": "={{ $('Twilio Trigger').item.json.data.from }}",
+              "type": "string"
+            },
+            {
+              "id": "menu-agent",
+              "name": "agent",
+              "value": "menu",
+              "type": "string"
+            },
+            {
+              "id": "menu-updated",
+              "name": "updated_at",
+              "value": "={{ new Date().toISOString() }}",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -4816,
+        800
+      ],
+      "id": "4fcb1f4b-821b-4cd4-a567-0d8a079f3f90",
+      "name": "Set Menu Session"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://hjiqmfjtjfxiqoevoirf.supabase.co/rest/v1/active_sessions?on_conflict=phone",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "apikey",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhqaXFtZmp0amZ4aXFvZXZvaXJmIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3Nzc2NTE5MywiZXhwIjoyMDkzMzQxMTkzfQ.Ioh9cKAPuxYYp2-qG7uZmvUefICtmuvBUDvcWr4wfEI"
+            },
+            {
+              "name": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhqaXFtZmp0amZ4aXFvZXZvaXJmIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc3Nzc2NTE5MywiZXhwIjoyMDkzMzQxMTkzfQ.Ioh9cKAPuxYYp2-qG7uZmvUefICtmuvBUDvcWr4wfEI"
+            },
+            {
+              "name": "Prefer",
+              "value": "resolution=merge-duplicates,return=representation"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ { phone: $json.phone, agent: $json.agent, updated_at: $json.updated_at } }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        -6000,
+        -256
+      ],
+      "id": "92693be7-7692-4592-ac96-8257377b9d55",
+      "name": "Upsert Menu Session"
+    }
+  ],
+  "connections": {
+    "Twilio Trigger": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields3",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Edit Fields4",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Edit Fields2",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Edit Fields1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Edit Fields6",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Groq Chat Model1": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Groq Chat Model2": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent1",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Groq Chat Model3": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent2",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Groq Chat Model4": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent3",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Groq Chat Model5": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent4",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Groq Chat Model6": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent5",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Detect Handoff",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent1": {
+      "main": [
+        [
+          {
+            "node": "Detect Handoff",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent2": {
+      "main": [
+        [
+          {
+            "node": "Detect Handoff",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent3": {
+      "main": [
+        [
+          {
+            "node": "Detect Handoff",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent4": {
+      "main": [
+        [
+          {
+            "node": "Detect Handoff",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent5": {
+      "main": [
+        [
+          {
+            "node": "Detect Handoff",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Postgres Chat Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "AI Agent5",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Postgres Chat Memory5": {
+      "ai_memory": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Postgres Chat Memory4": {
+      "ai_memory": [
+        [
+          {
+            "node": "AI Agent1",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Postgres Chat Memory3": {
+      "ai_memory": [
+        [
+          {
+            "node": "AI Agent2",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Postgres Chat Memory2": {
+      "ai_memory": [
+        [
+          {
+            "node": "AI Agent3",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Postgres Chat Memory1": {
+      "ai_memory": [
+        [
+          {
+            "node": "AI Agent4",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "AI Agent4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "Switch2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent6": {
+      "main": [
+        [
+          {
+            "node": "Send an SMS/MMS/WhatsApp message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch1": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Edit Fields3",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Edit Fields4",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Edit Fields2",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Edit Fields1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Edit Fields6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Groq Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent6",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields6": {
+      "main": [
+        [
+          {
+            "node": "AI Agent5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields1": {
+      "main": [
+        [
+          {
+            "node": "AI Agent3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields2": {
+      "main": [
+        [
+          {
+            "node": "AI Agent2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields3": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields4": {
+      "main": [
+        [
+          {
+            "node": "AI Agent1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch2": {
+      "main": [
+        [
+          {
+            "node": "Set Handoff Waiting",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Set Selected Agent",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Switch",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Set Menu Session",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "AI Agent6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set Handoff Waiting": {
+      "main": [
+        [
+          {
+            "node": "Send an SMS/MMS/WhatsApp message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Detect Handoff": {
+      "main": [
+        [
+          {
+            "node": "Upsert Handoff Session",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Send an SMS/MMS/WhatsApp message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Upsert Handoff Session": {
+      "main": [
+        [
+          {
+            "node": "Set Handoff Message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set Handoff Message": {
+      "main": [
+        [
+          {
+            "node": "Send an SMS/MMS/WhatsApp message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set Selected Agent": {
+      "main": [
+        [
+          {
+            "node": "Upsert Selected Agent Session",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Upsert Selected Agent Session": {
+      "main": [
+        [
+          {
+            "node": "Switch",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Set Menu Session": {
+      "main": [
+        [
+          {
+            "node": "Upsert Menu Session",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Upsert Menu Session": {
+      "main": [
+        [
+          {
+            "node": "AI Agent6",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "staticData": {
+    "node:Twilio Trigger": {
+      "sinkId": "DGb166fecd3225eb694fb0c626c259cec7",
+      "subscriptionId": "DF1a3bf321de8d71f498ff9c20d5c0c75e"
+    }
+  },
+  "meta": {
+    "templateCredsSetupCompleted": true
+  },
+  "pinData": {},
+  "versionId": "402abf90-defb-4172-9ece-b0bdc3099c0f",
+  "activeVersionId": "d08b98ac-c7e4-4c9f-908a-894b3ecbb263",
+  "versionCounter": 1015,
+  "triggerCount": 1,
+  "tags": [],
+  "shared": [
+    {
+      "updatedAt": "2026-03-31T22:44:18.461Z",
+      "createdAt": "2026-03-31T22:44:18.461Z",
+      "role": "workflow:owner",
+      "workflowId": "SkTseyHBfouDWODw",
+      "projectId": "dOZjzJMGazSt9r8y",
+      "project": {
+        "updatedAt": "2026-03-31T18:06:50.146Z",
+        "createdAt": "2026-03-31T18:05:57.306Z",
+        "id": "dOZjzJMGazSt9r8y",
+        "name": "mateo Mateo Martinez <matemartinezalfaro@gmail.com>",
+        "type": "personal",
+        "icon": null,
+        "description": null,
+        "creatorId": "9555ddf8-c81c-4a16-8164-fda5ef843077"
+      }
+    }
+  ],
+  "versionMetadata": {
+    "name": null,
+    "description": null
+  }
+}

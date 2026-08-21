@@ -1,0 +1,8 @@
+{
+  "rules": {
+    "alquileres": {
+      ".read": "auth != null",
+      ".write": "auth != null"
+    }
+  }
+}

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2310b981'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='central' text-anchor='middle' font-family='system-ui,sans-serif' font-size='20' font-weight='800' fill='%230f172a'%3EG%3C/text%3E%3C/svg%3E">
+  <title>Gestor de Alquileres - Tiendas</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=12.0">
+</head>
+
+<body>
+
+  <div id="app">
+    <div class="sidebar-backdrop" id="sb-backdrop" onclick="closeMobSidebar()"></div>
+    <aside class="sidebar">
+      <div class="slogo">GestorAlquileres<span>// v3.0 franquicias</span></div>
+      <div class="ssec">// navegación</div>
+      <div class="nav" onclick="goPage('dashboard',this)">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg>
+        Menú
+      </div>
+      <div class="nav active" onclick="goPage('tiendas',this)">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"/><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"/><path d="M2 7h20"/><path d="M22 7v3a2 2 0 0 1-2 2v0a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12v0a2 2 0 0 1-2-2V7"/></svg>
+        Tiendas
+      </div>
+      <div class="nav" onclick="goPage('contactos',this)">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        Contactos
+      </div>
+      <div class="nav" onclick="goPage('reportes',this)">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        Reportes
+      </div>
+      <div class="nav" onclick="goPage('pagos',this)">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+        Seguimiento Pagos
+      </div>
+      <div class="nav" onclick="goPage('checklist',this)">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 11 3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        Check List
+      </div>
+      <div class="nav" onclick="goPage('ajustes',this)">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="16" height="20" x="4" y="2" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="16" y1="14" x2="16" y2="18"/><path d="M16 10h.01"/><path d="M12 10h.01"/><path d="M8 10h.01"/><path d="M12 14h.01"/><path d="M8 14h.01"/><path d="M12 18h.01"/><path d="M8 18h.01"/></svg>
+        Calculadora
+      </div>
+      <div class="ssec">// config</div>
+      <div class="nav" onclick="goPage('ipc',this)">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+        Índice IPC
+      </div>
+      <div class="nav" onclick="goPage('cuentas',this)" id="nav-cuentas" style="display:none;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M16 11h6"/></svg>
+        Cuentas
+      </div>
+      <div class="sbot">
+        <div style="position:relative;margin:0 6px 8px;">
+          <div id="drive-status" onclick="toggleServerMenu(event)"
+            style="display:flex;align-items:center;gap:8px;padding:8px 12px;border-radius:8px;cursor:pointer;background:var(--s2);border:1px solid var(--bdr);transition:border-color .2s;user-select:none;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg>
+            <div style="flex:1;min-width:0;">
+              <div id="server-type-label"
+                style="font-family:var(--fm);font-size:9px;text-transform:uppercase;letter-spacing:.08em;color:var(--t3);">
+                Servidor local</div>
+              <div style="font-size:11px;color:var(--t2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;"
+                id="drive-label">Sin conectar</div>
+            </div>
+            <div style="display:flex;align-items:center;gap:5px;">
+              <div id="drive-dot" style="width:7px;height:7px;border-radius:50%;background:var(--t4);flex-shrink:0;">
+              </div>
+              <svg viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2.5"
+                style="color:var(--t3)">
+                <polyline points="6,9 12,15 18,9" />
+              </svg>
+            </div>
+          </div>
+          <div id="server-menu"
+            style="display:none;position:absolute;bottom:calc(100% + 6px);left:0;right:0;background:var(--s2);border:1px solid var(--bdr2);border-radius:8px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.5);z-index:999;">
+            <div
+              style="font-family:var(--fm);font-size:9px;text-transform:uppercase;letter-spacing:.1em;color:var(--t3);padding:8px 12px 4px;">
+              // opciones</div>
+            <div onclick="exportarDatos()" class="smenu-item">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+                <polyline points="7,10 12,15 17,10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+              Exportar backup
+            </div>
+            <div onclick="importarDatos()" class="smenu-item">
+              <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+                <polyline points="17,8 12,3 7,8" />
+                <line x1="12" y1="3" x2="12" y2="15" />
+              </svg>
+              Importar backup
+            </div>
+            <div style="height:1px;background:var(--bdr);margin:3px 0;"></div>
+            <div onclick="closeServerMenu();goPage('cuentas',null)" class="smenu-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--t3);margin-right:8px;"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M16 11h6"/></svg>
+              Cuentas
+            </div>
+            <div onclick="closeServerMenu();goPage('archivados',null)" class="smenu-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--t3);margin-right:8px;"><polyline points="21 8 21 21 3 21 3 8"/><rect width="22" height="5" x="1" y="3"/><line x1="10" y1="12" x2="14" y2="12"/></svg>
+              Archivados
+            </div>
+            <div style="height:1px;background:var(--bdr);margin:3px 0;"></div>
+            <div onclick="pedirPassYVaciar()" class="smenu-item smenu-danger">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--danger);margin-right:8px;"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/><line x1="10" y1="11" x2="10" y2="17"/><line x1="14" y1="11" x2="14" y2="17"/></svg>
+              Vaciar base de datos
+            </div>
+          </div>
+        </div>
+        <div class="uchip">
+          <div class="uav" id="uav">A</div>
+          <div>
+            <div class="un" id="uname">Admin</div>
+            <div class="ur" id="urole">admin</div>
+          </div>
+          <button class="blogout" onclick="doLogout()" title="Cerrar sesión">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+    <div class="mob-topbar">
+      <button class="mob-menu-btn" onclick="toggleMobSidebar()" aria-label="Menu">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <span class="mob-topbar-title">GestorAlquileres</span>
+    </div>
+      <!-- TIENDAS LIST -->
+      <div class="page active" id="page-tiendas">
+        <div class="ph">
+          <div style="display:flex;align-items:center;gap:12px;">
+            <button onclick="goBack()" class="btn-back" title="Volver atrás">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+            </button>
+            <div>
+              <div class="ptitle">Tiendas</div>
+              <div class="psub">// gestión de contratos</div>
+            </div>
+          </div>
+          <div class="ph-actions">
+            <button class="btn ba bsm" onclick="clearTForm();openModal('m-tienda')">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="12" height="12">
+                <line x1="12" y1="5" x2="12" y2="19" />
+                <line x1="5" y1="12" x2="19" y2="12" />
+              </svg>Nueva
+            </button>
+          </div>
+        </div>
+
+        <!-- Buscador y filtro de tipo arriba de la tabla -->
+        <div class="filter-row">
+          <div class="filter-group">
+            <div class="searchbar" style="margin:0;flex:1;">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+              <input type="text" placeholder="Buscar por nombre, propietario, dirección o responsable..." id="search-t" oninput="renderTbody()" style="width:100%;" />
+            </div>
+            <div class="filter-selector" id="tiendas-filtro-tipo">
+              <button class="btn bsm active" onclick="setTiendasFiltro('TODAS', this)">Todas</button>
+              <button class="btn bsm" onclick="setTiendasFiltro('SUCURSAL', this)">Sucursales</button>
+              <button class="btn bsm" onclick="setTiendasFiltro('FRANQUICIA', this)">Franquicias</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" style="overflow:hidden;">
+          <div id="tiendas-table-scroll" style="overflow-x:auto;overflow-y:clip;">
+            <table id="tiendas-table" style="width:100%;border-collapse:collapse;min-width:900px;">
+              <thead id="tiendas-thead"></thead>
+              <tbody id="tiendas-tbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Modal Tienda -->
+  <div class="moverlay" id="m-tienda">
+    <div class="mdialog">
+      <div class="mhead">
+        <div class="mtitle" id="m-t-title">Nueva Tienda</div><button class="mclose"
+          onclick="closeModal('m-tienda')">×</button>
+      </div>
+      <div class="mbody">
+        <div class="tabbar">
+          <div class="tab active" onclick="swTab(this,'mt-gen')">General</div>
+          <div class="tab" onclick="swTab(this,'mt-con')">Contratos</div>
+          <div class="tab" onclick="swTab(this,'mt-eco')">Económico</div>
+          <div class="tab" onclick="swTab(this,'mt-obs')">Observaciones</div>
+        </div>
+        <div id="mt-gen">
+          <div class="frow">
+            <div class="fg"><label>Nombre *</label><input type="text" id="t-nombre"
+                placeholder="Ej: Nombre de la tienda" /></div>
+            <div class="fg"><label>Número de Tienda</label><input type="text" id="t-num" placeholder="Ej: LY01" /></div>
+          </div>
+          <div class="frow">
+            <div class="fg"><label>Tipo</label><select id="t-tipo">
+                <option value="FRANQUICIA">Franquicia</option>
+                <option value="SUCURSAL">Sucursal</option>
+              </select></div>
+            <div class="fg"><label>Departamento/Provincia</label><input type="text" id="t-depar"
+                placeholder="Ej: San Rafael, Mendoza" /></div>
+          </div>
+          <div class="frow">
+            <div class="fg"><label>Razón social</label><input type="text" id="t-razon" placeholder="Razón social" /></div>
+            <div class="fg"><label>CUIT</label><input type="text" id="t-cuit" placeholder="XX-XXXXXXXX-X" /></div>
+          </div>
+          <div class="frow">
+            <div class="fg"><label>Superficie (m²)</label><input type="text" id="t-m2" placeholder="Ej: 150" /></div>
+            <div class="fg"><label>Dirección</label><input type="text" id="t-dir" placeholder="Calle, número, localidad" /></div>
+          </div>
+          <div class="frow">
+            <div class="fg"><label>Propietario del local</label><input type="text" id="t-prop"
+                placeholder="Nombre propietario" /></div>
+            <div class="fg"><label>Usuario del local</label><input type="text" id="t-usuario" placeholder="Nombre del inquilino" /></div>
+            <div class="fg"><label>Teléfono</label><input type="text" id="t-tel" placeholder="Ej: 261..." /></div>
+          </div>
+          <div class="frow">
+            <div class="fg"><label>Contacto / Emails (usar / para varios)</label><input type="text" id="t-cont"
+                placeholder="ejemplo@mail.com / otro@mail.com" /></div>
+            <div class="fg"><label>Adenda</label><select id="t-adenda">
+                <option value="no">No</option>
+                <option value="si">Sí</option>
+              </select></div>
+          </div>
+        </div>
+        <div id="mt-con" style="display:none;">
+          <div
+            style="background:var(--s3);border-radius:7px;padding:10px;margin-bottom:12px;font-family:var(--fm);font-size:10px;color:var(--t3);">
+            Dejá en blanco lo que no aplique.</div>
+          <div
+            style="font-family:var(--fm);font-size:9px;text-transform:uppercase;letter-spacing:.08em;color:var(--t3);margin-bottom:8px;">
+            📄 Contrato de Locación</div>
+          <div class="frow">
+            <div class="fg"><label>Inicio</label><input type="date" id="t-loc-ini" /></div>
+            <div class="fg"><label>Vencimiento</label><input type="date" id="t-loc-fin" /></div>
+          </div>
+          <div class="divider"></div>
+          <div
+            style="font-family:var(--fm);font-size:9px;text-transform:uppercase;letter-spacing:.08em;color:var(--t3);margin-bottom:8px;">
+            📄 Contrato de Sublocación</div>
+          <div class="frow">
+            <div class="fg"><label>Inicio</label><input type="date" id="t-sub-ini" /></div>
+            <div class="fg"><label>Vencimiento</label><input type="date" id="t-sub-fin" /></div>
+          </div>
+          <div class="divider"></div>
+          <div
+            style="font-family:var(--fm);font-size:9px;text-transform:uppercase;letter-spacing:.08em;color:var(--t3);margin-bottom:8px;">
+            🔒 Caución</div>
+          <div class="frow">
+            <div class="fg"><label>Inicio</label><input type="date" id="t-cau-ini" /></div>
+            <div class="fg"><label>Vencimiento</label><input type="date" id="t-cau-fin" /></div>
+          </div>
+          <div class="divider"></div>
+          <div
+            style="font-family:var(--fm);font-size:9px;text-transform:uppercase;letter-spacing:.08em;color:var(--t3);margin-bottom:8px;">
+            🏢 Contrato de Franquicia</div>
+          <div class="frow">
+            <div class="fg"><label>Inicio</label><input type="date" id="t-fra-ini" /></div>
+            <div class="fg"><label>Vencimiento</label><input type="date" id="t-fra-fin" /></div>
+          </div>
+        </div>
+        <div id="mt-eco" style="display:none;">
+          <div class="frow">
+            <div class="fg">
+              <label>Inicio contrato (cálculo)
+                <span id="t-ini-sync-badge"
+                  style="display:none;font-family:var(--fm);font-size:9px;color:var(--acc);margin-left:6px;cursor:pointer;"
+                  onclick="desyncIni()" title="Clic para editar manualmente">● sincronizado con Locación ✕</span>
+              </label>
+              <input type="date" id="t-ini" oninput="markIniManual()" />
+              <div style="font-family:var(--fm);font-size:10px;color:var(--t3);margin-top:4px;" id="t-ini-hint">
+                Se completa automáticamente con la fecha de inicio del contrato de Locación.
+              </div>
+            </div>
+            <div class="fg"><label>Monto inicial ($)</label><input type="number" id="t-monto" placeholder="350000" />
+            </div>
+          </div>
+          <div class="frow">
+            <div class="fg"><label>Frecuencia de ajuste</label>
+              <select id="t-ajuste">
+                <option value="Mensual">Mensual</option>
+                <option value="Trimestral">Trimestral</option>
+                <option value="Cuatrimestral">Cuatrimestral</option>
+                <option value="Semestral" selected>Semestral</option>
+                <option value="Anual">Anual</option>
+              </select>
+            </div>
+            <div class="fg"><label>Índice de actualización</label>
+              <select id="t-indice" onchange="toggleIndiceFields(this.value)">
+                <option value="IPC Nacional">IPC Nacional</option>
+                <option value="IPC Cuyo">IPC Zona Cuyo</option>
+                <option value="ICL">ICL – Ley 27.551</option>
+                <option value="CCT 130/75">C.C.T. 130/75 – Vendedor A</option>
+                <option value="Fijo">Porcentaje fijo</option>
+                <option value="Manual">Arregla con el dueño</option>
+              </select>
+            </div>
+            <div class="fg"><label>Desfase de índice</label>
+              <select id="t-desfase">
+                <option value="1" selected>1 mes (Estándar)</option>
+                <option value="2">2 meses (Facturación)</option>
+                <option value="0">Sin desfase</option>
+              </select>
+            </div>
+          </div>
+          <div id="t-indice-extra"
+            style="margin-top:10px; display:none; background:rgba(255,255,255,.03); border:1px solid var(--bdr); border-radius:8px; padding:12px;">
+            <div id="t-icl-extra" style="display:none;">
+              <div class="fg" style="margin:0;"><label>ICL en fecha de inicio</label><input type="number" id="t-icl-ini"
+                  placeholder="Ej: 2.5100" step="0.0001" /></div>
+              <div style="font-family:var(--fm);font-size:10px;color:var(--t3);margin-top:6px;">El ICL actual se tomará
+                de la tabla de índices.</div>
+            </div>
+            <div id="t-fijo-extra" style="display:none;">
+              <div class="fg" style="margin:0;"><label>Porcentaje de aumento (%)</label><input type="number"
+                  id="t-pct-fijo" placeholder="Ej: 30" step="0.1" /></div>
+            </div>
+          </div>
+          <div class="frow" style="margin-top:15px;">
+            <div class="fg"><label>Depósito / Caución ($)</label><input type="number" id="t-dep" placeholder="700000" />
+            </div>
+            <div class="fg"><label>Día de pago del canon</label><input type="number" id="t-diapago" placeholder="10"
+                min="1" max="31" /></div>
+          </div>
+        </div>
+        <div id="mt-obs" style="display:none;">
+          <div class="fg"><label>Irregularidades / alertas internas</label><textarea id="t-irreg"
+              placeholder="Ej: SIN CAUCION, FACTURA PENDIENTE..."></textarea></div>
+          <div class="fg"><label>Observaciones generales</label><textarea id="t-obs"
+              placeholder="Notas sobre esta tienda..."></textarea></div>
+        </div>
+      </div>
+      <div class="mfoot" style="justify-content:space-between;">
+        <div style="display:flex;gap:6px;">
+          <button class="btn bg2 bsm" onclick="descargarCSVEjemplo()" title="Descargar CSV de ejemplo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="11" height="11">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7,10 12,15 17,10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            CSV ejemplo
+          </button>
+          <button class="btn bg2 bsm" onclick="closeModal('m-tienda');resetImport();openModal('m-import')">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="11" height="11">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="17,8 12,3 7,8" />
+              <line x1="12" y1="3" x2="12" y2="15" />
+            </svg>
+            Importar CSV
+          </button>
+        </div>
+        <div style="display:flex;gap:6px;">
+          <button class="btn bg2" onclick="closeModal('m-tienda')">Cancelar</button>
+          <button class="btn ba" onclick="saveTienda()">Guardar tienda</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Importar CSV -->
+  <div class="moverlay" id="m-import">
+    <div class="mdialog" style="max-width:780px;">
+      <div class="mhead">
+        <div class="mtitle">Importar tiendas desde CSV</div>
+        <button class="mclose" onclick="closeModal('m-import')">×</button>
+      </div>
+      <div class="mbody">
+        <!-- Step 1: upload -->
+        <div id="imp-step1">
+          <div
+            style="background:var(--s3);border-radius:8px;padding:10px 13px;margin-bottom:14px;font-family:var(--fm);font-size:10px;color:var(--t3);line-height:1.6;">
+            El archivo CSV debe tener la primera fila como encabezado con los nombres de columna exactos. Las columnas
+            obligatorias son <strong style="color:var(--t1)">nombre</strong> y <strong
+              style="color:var(--t1)">tipo</strong>. El resto son opcionales.<br>
+            Podés descargar el CSV de ejemplo para ver el formato correcto.
+          </div>
+          <div id="imp-dropzone" onclick="document.getElementById('imp-file-input').click()"
+            style="border:2px dashed var(--bdr2);border-radius:10px;padding:40px 20px;text-align:center;cursor:pointer;transition:all .2s;background:var(--s2);"
+            ondragover="event.preventDefault();this.style.borderColor='var(--acc)';this.style.background='rgba(245,166,35,.06)'"
+            ondragleave="this.style.borderColor='var(--bdr2)';this.style.background='var(--s2)'"
+            ondrop="event.preventDefault();this.style.borderColor='var(--bdr2)';this.style.background='var(--s2)';handleCSVFile(event.dataTransfer.files[0])">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="36" height="36"
+              style="color:var(--t3);margin-bottom:10px;">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="17 8 12 3 7 8" />
+              <line x1="12" y1="3" x2="12" y2="15" />
+            </svg>
+            <div style="font-family:var(--fh);font-size:14px;font-weight:700;color:var(--t1);margin-bottom:4px;">
+              Arrastrá tu archivo CSV aquí</div>
+            <div style="font-family:var(--fm);font-size:10px;color:var(--t3);">o hacé clic para seleccionarlo</div>
+            <input type="file" id="imp-file-input" accept=".csv,text/csv" style="display:none"
+              onchange="handleCSVFile(this.files[0])" />
+          </div>
+          <div id="imp-error"
+            style="display:none;background:rgba(224,82,82,.08);border:1px solid rgba(224,82,82,.25);border-radius:7px;padding:9px 12px;margin-top:12px;font-size:12px;color:var(--danger);font-family:var(--fm);">
+          </div>
+        </div>
+
+        <!-- Step 2: preview -->
+        <div id="imp-step2" style="display:none;">
+          <div id="imp-summary" style="display:flex;gap:10px;margin-bottom:14px;flex-wrap:wrap;"></div>
+          <div
+            style="font-family:var(--fm);font-size:9px;text-transform:uppercase;letter-spacing:.1em;color:var(--t3);margin-bottom:8px;">
+            Vista previa (primeras 5 filas)</div>
+          <div style="overflow-x:auto;max-height:260px;overflow-y:auto;border:1px solid var(--bdr);border-radius:8px;">
+            <table id="imp-preview-table" style="width:100%;border-collapse:collapse;min-width:600px;">
+              <thead id="imp-preview-thead"></thead>
+              <tbody id="imp-preview-tbody"></tbody>
+            </table>
+          </div>
+          <div
+            style="margin-top:14px;background:var(--s3);border-radius:7px;padding:10px 13px;font-family:var(--fm);font-size:10px;color:var(--t3);">
+            <strong style="color:var(--t1);">Modo de importación:</strong>
+            <div style="display:flex;gap:16px;margin-top:8px;">
+              <label style="display:flex;align-items:center;gap:6px;cursor:pointer;color:var(--t2);font-size:11px;">
+                <input type="radio" name="imp-mode" value="add" checked style="accent-color:var(--acc);"> Agregar a las
+                tiendas existentes
+              </label>
+              <label style="display:flex;align-items:center;gap:6px;cursor:pointer;color:var(--t2);font-size:11px;">
+                <input type="radio" name="imp-mode" value="replace" style="accent-color:var(--acc);"> Reemplazar todas
+                las tiendas
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mfoot">
+        <button class="btn bg2" onclick="closeModal('m-import');resetImport()">Cancelar</button>
+        <button id="imp-btn-confirm" class="btn ba" style="display:none;" onclick="confirmarImport()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="12" height="12">
+            <polyline points="20 6 9 17 4 12" />
+          </svg>
+          Importar tiendas
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js?v=5.0"></script>
+</body>
+
+</html>

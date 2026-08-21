@@ -1,0 +1,153 @@
+{
+  "updatedAt": "2026-05-05T16:21:52.266Z",
+  "createdAt": "2026-05-05T16:21:52.266Z",
+  "id": "Igc3697e444e1f4f",
+  "name": "Instagram DM Test",
+  "description": "Workflow base separado para Instagram DM con Facebook Trigger + preparaci?n inicial de payload.",
+  "active": false,
+  "isArchived": false,
+  "nodes": [
+    {
+      "parameters": {
+        "appId": "",
+        "object": "instagram",
+        "fields": [
+          "messages"
+        ],
+        "options": {
+          "includeValues": true
+        }
+      },
+      "id": "0ebfe389-6143-45db-b50d-fa982a1d0250",
+      "name": "Facebook Trigger",
+      "type": "n8n-nodes-base.facebookTrigger",
+      "typeVersion": 1,
+      "position": [
+        -640,
+        0
+      ],
+      "credentials": {}
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "21ee6771-d6e3-411b-a63c-5e749b50bc91",
+              "name": "entry_id",
+              "value": "={{ $json.id || $json.entry?.[0]?.id || \"\" }}",
+              "type": "string"
+            },
+            {
+              "id": "7b80b6a8-3457-460f-9224-103d82c3a596",
+              "name": "message_text",
+              "value": "={{ $json.messaging?.[0]?.message?.text || $json.changes?.[0]?.value?.messages?.[0]?.text?.body || \"\" }}",
+              "type": "string"
+            },
+            {
+              "id": "aa0757d2-9b14-4d3b-98e7-4bec71455716",
+              "name": "sender_id",
+              "value": "={{ $json.messaging?.[0]?.sender?.id || $json.changes?.[0]?.value?.contacts?.[0]?.wa_id || \"\" }}",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "id": "a90047b0-a45b-40b0-94f4-c25f87c7e147",
+      "name": "Edit Fields",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -336,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "78bb87f6-57e6-4c01-8689-06d49b297d85",
+              "name": "next_step",
+              "value": "Configurar credencial facebookGraphAppApi, completar App ID y agregar nodo de respuesta por Graph API.",
+              "type": "string"
+            }
+          ]
+        },
+        "includeOtherFields": true,
+        "options": {}
+      },
+      "id": "60fc2f4c-ce98-4039-bada-116509e01a2f",
+      "name": "Instagram TODO",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -32,
+        0
+      ]
+    }
+  ],
+  "connections": {
+    "Facebook Trigger": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Edit Fields": {
+      "main": [
+        [
+          {
+            "node": "Instagram TODO",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Instagram TODO": {
+      "main": [
+        []
+      ]
+    }
+  },
+  "settings": {},
+  "staticData": {},
+  "meta": {},
+  "pinData": {},
+  "versionId": "ea2fc9d2-c92f-4d32-b894-184660f98fa3",
+  "activeVersionId": null,
+  "versionCounter": 2,
+  "triggerCount": 0,
+  "tags": [],
+  "shared": [
+    {
+      "updatedAt": "2026-05-05T16:21:52.272Z",
+      "createdAt": "2026-05-05T16:21:52.272Z",
+      "role": "workflow:owner",
+      "workflowId": "Igc3697e444e1f4f",
+      "projectId": "dOZjzJMGazSt9r8y",
+      "project": {
+        "updatedAt": "2026-03-31T18:06:50.146Z",
+        "createdAt": "2026-03-31T18:05:57.306Z",
+        "id": "dOZjzJMGazSt9r8y",
+        "name": "mateo Mateo Martinez <matemartinezalfaro@gmail.com>",
+        "type": "personal",
+        "icon": null,
+        "description": null,
+        "creatorId": "9555ddf8-c81c-4a16-8164-fda5ef843077"
+      }
+    }
+  ],
+  "versionMetadata": {
+    "name": "Instagram DM Test",
+    "description": "Workflow base separado para Instagram DM con Facebook Trigger + preparaci?n inicial de payload."
+  }
+}

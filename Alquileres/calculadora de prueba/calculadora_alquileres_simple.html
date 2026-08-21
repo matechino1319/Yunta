@@ -1,0 +1,467 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora de Alquileres</title>
+  <style>
+    :root {
+      --bg: #0b1220;
+      --panel: #111b30;
+      --line: #24314a;
+      --text: #f4f7ff;
+      --muted: #a6b3ca;
+      --accent: #6d5efc;
+      --accent2: #2dd4bf;
+      --danger: #ef4444;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Segoe UI, Arial, sans-serif;
+      color: var(--text);
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at top left, rgba(109, 94, 252, 0.2), transparent 24%),
+        radial-gradient(circle at top right, rgba(45, 212, 191, 0.14), transparent 22%),
+        linear-gradient(180deg, #0d1526, #07101c 72%);
+    }
+    .wrap { max-width: 1200px; margin: 0 auto; padding: 20px 14px 28px; }
+    .hero, .panel, .notes {
+      background: linear-gradient(180deg, rgba(16, 25, 44, 0.98), rgba(8, 13, 24, 0.98));
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      box-shadow: 0 22px 70px rgba(0, 0, 0, 0.24);
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1.35fr 0.95fr;
+      gap: 18px;
+      padding: 22px;
+      margin-bottom: 16px;
+    }
+    .eyebrow {
+      display: inline-block;
+      color: var(--accent2);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    h1 { margin: 0 0 10px; font-size: clamp(28px, 4.8vw, 50px); line-height: 1.03; }
+    .lead { margin: 0; color: var(--muted); line-height: 1.6; max-width: 70ch; }
+    .hero-side { display: grid; gap: 12px; }
+    .mini {
+      padding: 16px;
+      border-radius: 16px;
+      background: rgba(8, 13, 24, 0.7);
+      border: 1px solid var(--line);
+    }
+    .mini strong { display: block; margin-bottom: 6px; }
+    .mini span { color: var(--muted); line-height: 1.5; font-size: 14px; }
+    .panel { padding: 18px; }
+    .grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 18px; }
+    .card, .result, .source-box {
+      padding: 18px;
+      border-radius: 18px;
+      background: rgba(8, 13, 24, 0.7);
+      border: 1px solid var(--line);
+    }
+    .card h2, .result h2, .notes h2 { margin: 0 0 14px; font-size: 20px; }
+    .field { margin-bottom: 14px; }
+    label { display: block; margin-bottom: 8px; color: var(--muted); font-size: 13px; font-weight: 600; }
+    input, select {
+      width: 100%;
+      border: 1px solid var(--line);
+      background: #09101f;
+      color: var(--text);
+      padding: 13px 14px;
+      border-radius: 12px;
+      outline: none;
+      font-size: 15px;
+    }
+    input:focus, select:focus {
+      border-color: rgba(109, 94, 252, 0.95);
+      box-shadow: 0 0 0 3px rgba(109, 94, 252, 0.15);
+    }
+    .fields { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .hint { margin-top: 8px; color: var(--muted); font-size: 12px; line-height: 1.5; }
+    .index-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 6px;
+    }
+    .index-btn {
+      border: 1px solid var(--line);
+      background: #0f1a33;
+      color: var(--text);
+      padding: 10px 14px;
+      border-radius: 14px;
+      cursor: pointer;
+      font-weight: 700;
+      transition: transform 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+    }
+    .index-btn:hover { transform: translateY(-1px); }
+    .index-btn.active {
+      background: linear-gradient(135deg, var(--accent), #5b8cff);
+      border-color: transparent;
+    }
+    .index-btn.unsupported { opacity: 0.55; }
+    .actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px; }
+    button.action {
+      border: 0;
+      background: linear-gradient(135deg, var(--accent), #5b8cff);
+      color: white;
+      padding: 12px 16px;
+      border-radius: 12px;
+      font-weight: 700;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    button.secondary { background: #0f1a33; border: 1px solid var(--line); }
+    .result-grid { display: grid; gap: 12px; }
+    .result-value { font-size: 32px; font-weight: 800; margin: 6px 0 4px; }
+    .result-meta { color: var(--muted); line-height: 1.55; font-size: 14px; }
+    .badge-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+    .badge { padding: 8px 10px; border-radius: 999px; background: #0f1a33; border: 1px solid var(--line); color: var(--text); font-size: 12px; }
+    .badge.error { border-color: rgba(239, 68, 68, 0.45); color: #fecaca; }
+    .source-box a { color: #9fd4ff; text-decoration: none; word-break: break-word; }
+    .source-box a:hover { text-decoration: underline; }
+    .source-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 12px; }
+    .source-item {
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: rgba(8, 13, 24, 0.7);
+    }
+    .source-item a { color: #9fd4ff; text-decoration: none; word-break: break-word; }
+    .small { margin-top: 10px; color: var(--muted); font-size: 12px; line-height: 1.5; white-space: pre-line; }
+    @media (max-width: 900px) {
+      .hero, .grid, .source-list, .fields { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div>
+        <div class="eyebrow">Calculadora de alquileres</div>
+        <h1>Índices actualizados y cálculo automático</h1>
+        <p class="lead">
+          Elegís el índice, cargás el alquiler inicial y la fecha de inicio, y la calculadora trae los valores oficiales sola.
+          `IPC Zona Cuyo` sale de INDEC y `ICL`, `CER` y `UVA` salen de BCRA.
+        </p>
+      </div>
+      <div class="hero-side">
+        <div class="mini">
+          <strong>Qué hace</strong>
+          <span>Calcula el ajuste del alquiler con datos oficiales y te muestra cuántos períodos ya pasaron hasta hoy.</span>
+        </div>
+        <div class="mini">
+          <strong>Automático</strong>
+          <span>Ya no tenés que cargar el índice a mano: se busca solo según el botón que elija el usuario.</span>
+        </div>
+        <div class="mini">
+          <strong>Fuentes</strong>
+          <span>BCRA para ICL, CER y UVA. INDEC para IPC y IPC Zona Cuyo.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="grid">
+        <div class="card">
+          <h2>Datos</h2>
+          <div class="field">
+            <label for="indice">Índice de actualización</label>
+            <div class="index-row" id="indexRow">
+              <button class="index-btn active" data-index="ICL" type="button">ICL</button>
+              <button class="index-btn" data-index="IPC" type="button">IPC</button>
+              <button class="index-btn" data-index="IPC Zona Cuyo" type="button">IPC Zona Cuyo</button>
+              <button class="index-btn unsupported" data-index="Casa Propia" type="button">Casa Propia</button>
+              <button class="index-btn unsupported" data-index="CAC" type="button">CAC</button>
+              <button class="index-btn" data-index="CER" type="button">CER</button>
+              <button class="index-btn unsupported" data-index="IS" type="button">IS</button>
+              <button class="index-btn unsupported" data-index="IPIM" type="button">IPIM</button>
+              <button class="index-btn" data-index="UVA" type="button">UVA</button>
+            </div>
+            <input id="indice" type="hidden" value="ICL" />
+            <div class="hint">Si elegís un índice todavía no conectado, te lo aviso abajo.</div>
+          </div>
+          <div class="fields">
+            <div class="field">
+              <label for="alquiler">Valor inicial del alquiler</label>
+              <input id="alquiler" type="number" min="0" step="0.01" value="300000" />
+            </div>
+            <div class="field">
+              <label for="inicioMes">Mes de inicio de contrato</label>
+              <input id="inicioMes" type="month" />
+            </div>
+          </div>
+          <div class="field">
+            <label for="periodoMeses">Cada cuanto se actualiza (meses)</label>
+            <select id="periodoMeses">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12" selected>12</option>
+            </select>
+            <div class="hint">Si el contrato es anual, dejalo en 12. Si es semestral, poné 6.</div>
+          </div>
+          <div class="actions">
+            <button id="calcular" class="action" type="button">Actualizar</button>
+            <button id="limpiar" class="action secondary" type="button">Limpiar</button>
+          </div>
+        </div>
+
+        <div class="result-grid">
+          <div class="result">
+            <h2>Resultado</h2>
+            <div class="result-meta" id="resumen">Listo para calcular.</div>
+            <div class="result-value" id="nuevoAlquiler">$0</div>
+            <div class="result-meta" id="variacion">Variación: 0%</div>
+            <div class="result-meta" id="periodosTexto">Períodos transcurridos: 0</div>
+            <div class="result-meta" id="proximaTexto">Próxima actualización: -</div>
+            <div style="margin-top: 14px; padding-top: 10px; border-top: 1px solid var(--line); white-space: pre-line; font-family: monospace; font-size: 12px; color: var(--muted); line-height: 1.55;" id="evolucionTexto"></div>
+            <div class="badge-row">
+              <span class="badge" id="badgeIndice">Índice: ICL</span>
+              <span class="badge" id="badgeFactor">Factor: 1.0000</span>
+              <span class="badge" id="badgePeriodo">Cada 12 meses</span>
+            </div>
+          </div>
+
+          <div class="source-box">
+            <h2>Fuente oficial</h2>
+            <div class="result-meta" id="fuenteTexto">ICL usa BCRA y IPC Zona Cuyo usa INDEC.</div>
+            <div style="margin-top:10px;">
+              <a id="fuenteLink" href="https://www.bcra.gob.ar/tasas-de-interes/" target="_blank" rel="noopener noreferrer">Abrir fuente oficial</a>
+            </div>
+            <div class="small" id="fuenteNota">La fuente cambia según el índice seleccionado.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="notes">
+      <h2>Fuentes oficiales</h2>
+      <div class="source-list">
+        <div class="source-item"><strong>ICL / CER / UVA</strong><br><a href="https://www.bcra.gob.ar/apis-banco-central/" target="_blank" rel="noopener noreferrer">API del BCRA</a></div>
+        <div class="source-item"><strong>IPC</strong><br><a href="https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-31" target="_blank" rel="noopener noreferrer">INDEC - IPC</a></div>
+        <div class="source-item"><strong>IPC Zona Cuyo</strong><br><a href="https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-31" target="_blank" rel="noopener noreferrer">INDEC - IPC regional con cobertura para Cuyo</a></div>
+        <div class="source-item"><strong>Datos IPC</strong><br><a href="https://www.indec.gob.ar/ftp/calculadora_ipc/calculadora-actualizado.html" target="_blank" rel="noopener noreferrer">Calculadora oficial de INDEC</a></div>
+      </div>
+      <div class="small">Ya quedó conectado el auto-fetch para ICL, CER, UVA, IPC y IPC Zona Cuyo. Si querés, el siguiente paso es sumar Casa Propia, CAC, IS e IPIM con sus fuentes oficiales.</div>
+    </section>
+  </div>
+
+  <script>
+    const indiceEl = document.getElementById('indice');
+    const alquilerEl = document.getElementById('alquiler');
+    const inicioMesEl = document.getElementById('inicioMes');
+    const periodoEl = document.getElementById('periodoMeses');
+    const nuevoAlquilerEl = document.getElementById('nuevoAlquiler');
+    const variacionEl = document.getElementById('variacion');
+    const periodosTextoEl = document.getElementById('periodosTexto');
+    const proximaTextoEl = document.getElementById('proximaTexto');
+    const evolucionTextoEl = document.getElementById('evolucionTexto');
+    const resumenEl = document.getElementById('resumen');
+    const badgeIndiceEl = document.getElementById('badgeIndice');
+    const badgeFactorEl = document.getElementById('badgeFactor');
+    const badgePeriodoEl = document.getElementById('badgePeriodo');
+    const fuenteTextoEl = document.getElementById('fuenteTexto');
+    const fuenteLinkEl = document.getElementById('fuenteLink');
+    const fuenteNotaEl = document.getElementById('fuenteNota');
+    const indexRow = document.getElementById('indexRow');
+    const calculateBtn = document.getElementById('calcular');
+    const API_BASE = window.__CALCULADORA_API_BASE__ || (location.protocol === 'file:' ? 'http://127.0.0.1:8765' : location.origin);
+
+    const moneyFmt = new Intl.NumberFormat('es-AR', { style: 'currency', currency: 'ARS', maximumFractionDigits: 2 });
+    const numFmt = new Intl.NumberFormat('es-AR', { maximumFractionDigits: 4 });
+    const monthFmt = new Intl.DateTimeFormat('es-AR', { month: 'long', year: 'numeric' });
+    const dateFmt = new Intl.DateTimeFormat('es-AR', { day: '2-digit', month: '2-digit', year: 'numeric' });
+
+    function monthLabel(monthValue) {
+      return monthFmt.format(new Date(monthValue + '-01T00:00:00'));
+    }
+
+    function shiftMonth(monthValue, monthsToAdd) {
+      const [year, month] = monthValue.split('-').map(Number);
+      const d = new Date(Date.UTC(year, month - 1, 1));
+      d.setUTCMonth(d.getUTCMonth() + monthsToAdd);
+      return d.toISOString().slice(0, 7);
+    }
+
+    const sourceMap = {
+      'ICL': {
+        url: 'https://www.bcra.gob.ar/tasas-de-interes/',
+        text: 'ICL usa la API oficial del BCRA.',
+        note: 'Índice para Contratos de Locación. Fuente oficial: BCRA.'
+      },
+      'CER': {
+        url: 'https://www.bcra.gob.ar/tasas-de-interes/',
+        text: 'CER usa la API oficial del BCRA.',
+        note: 'Coeficiente de Estabilización de Referencia. Fuente oficial: BCRA.'
+      },
+      'UVA': {
+        url: 'https://www.bcra.gob.ar/tasas-de-interes/',
+        text: 'UVA usa la API oficial del BCRA.',
+        note: 'Unidad de Valor Adquisitivo. Fuente oficial: BCRA.'
+      },
+      'IPC': {
+        url: 'https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-31',
+        text: 'IPC usa la serie oficial de INDEC.',
+        note: 'IPC nacional con cobertura de INDEC.'
+      },
+      'IPC Zona Cuyo': {
+        url: 'https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-31',
+        text: 'IPC Zona Cuyo usa la serie oficial de INDEC.',
+        note: 'IPC regional con cobertura para Cuyo. Fuente oficial: INDEC.'
+      },
+      'Casa Propia': {
+        url: 'https://www.argentina.gob.ar/obras-publicas/coeficiente-casa-propia',
+        text: 'Casa Propia todavía no está conectado.',
+        note: 'Todavía no conecté la fuente automática de Casa Propia.'
+      },
+      'CAC': {
+        url: 'https://www.camarco.org.ar/indicadores/indicadores-de-costos/',
+        text: 'CAC todavía no está conectado.',
+        note: 'Todavía no conecté la fuente automática de CAC.'
+      },
+      'IS': {
+        url: 'https://www.indec.gob.ar/indec/web/Nivel4-Tema-4-31-61',
+        text: 'IS todavía no está conectado.',
+        note: 'Todavía no conecté la fuente automática de Índice de salarios.'
+      },
+      'IPIM': {
+        url: 'https://www.indec.gob.ar/indec/web/Nivel4-Tema-3-5-32',
+        text: 'IPIM todavía no está conectado.',
+        note: 'Todavía no conecté la fuente automática de IPIM.'
+      }
+    };
+
+    function todayMonthValue() {
+      const d = new Date();
+      const pad = (n) => String(n).padStart(2, '0');
+      return `${d.getFullYear()}-${pad(d.getMonth() + 1)}`;
+    }
+
+    function setActiveIndex(index) {
+      indiceEl.value = index;
+      indexRow.querySelectorAll('.index-btn').forEach((btn) => {
+        btn.classList.toggle('active', btn.dataset.index === index);
+      });
+      const src = sourceMap[index] || sourceMap['IPC'];
+      fuenteTextoEl.textContent = src.text;
+      fuenteLinkEl.href = src.url;
+      fuenteLinkEl.textContent = `Abrir fuente oficial de ${index}`;
+      fuenteNotaEl.textContent = src.note;
+      calculate();
+    }
+
+    async function calculate() {
+      const index = indiceEl.value;
+      const rent = Number(alquilerEl.value || 0);
+      const startMonth = inicioMesEl.value;
+      const periodMonths = Number(periodoEl.value || 12);
+
+      if (!startMonth) {
+        resumenEl.textContent = 'Elegí un mes de inicio.';
+        return;
+      }
+
+      calculateBtn.disabled = true;
+      calculateBtn.textContent = 'Actualizando...';
+
+      try {
+        const params = new URLSearchParams({
+          index,
+          rent: String(rent),
+          startMonth,
+          periodMonths: String(periodMonths),
+        });
+        const response = await fetch(`${API_BASE}/api/calculate?${params.toString()}`);
+        const data = await response.json();
+
+        if (!data.ok) {
+          resumenEl.textContent = data.error || 'No se pudo calcular.';
+          nuevoAlquilerEl.textContent = '$0';
+          variacionEl.textContent = 'Variación: 0%';
+          periodosTextoEl.textContent = 'Períodos transcurridos: 0';
+          proximaTextoEl.textContent = 'Próxima actualización: -';
+          badgeFactorEl.textContent = 'Factor: -';
+          fuenteNotaEl.textContent = data.error || fuenteNotaEl.textContent;
+          badgeIndiceEl.textContent = `Índice: ${index}`;
+          badgeIndiceEl.classList.add('error');
+          return;
+        }
+
+        badgeIndiceEl.classList.remove('error');
+        badgeIndiceEl.textContent = `Índice: ${data.index}`;
+        badgeFactorEl.textContent = `Factor: ${numFmt.format(data.factor)}`;
+        badgePeriodoEl.textContent = `Cada ${periodMonths} mes${periodMonths === 1 ? '' : 'es'}`;
+
+        nuevoAlquilerEl.textContent = moneyFmt.format(data.updated_rent);
+        variacionEl.textContent = `Variación: ${(data.factor >= 1 ? '+' : '')}${((data.factor - 1) * 100).toFixed(2)}%`;
+        periodosTextoEl.textContent = `Períodos transcurridos: ${data.periods}`;
+        proximaTextoEl.textContent = `Próxima actualización: ${data.next_update || '-'}`;
+        resumenEl.textContent = `${data.index} con contrato iniciado en ${monthLabel(startMonth)}. ${sourceMap[data.index]?.note || ''}`.trim();
+
+        const evolutionLines = [];
+        const initialEnd = shiftMonth(data.start_month || startMonth, Number(periodMonths || 12) - 1);
+        evolutionLines.push('Evolución período por período:');
+        evolutionLines.push(`${monthLabel(data.start_month || startMonth)} - ${monthLabel(initialEnd)}: ${moneyFmt.format(rent)} (monto inicial)`);
+        let previousRent = rent;
+        for (const step of (data.breakdown || [])) {
+          evolutionLines.push(`${monthLabel(step.active_from)} - ${monthLabel(step.active_to)}: ${moneyFmt.format(previousRent)} × ${numFmt.format(step.factor)} = ${moneyFmt.format(step.accumulated_rent)}`);
+          previousRent = step.accumulated_rent;
+        }
+        evolucionTextoEl.textContent = evolutionLines.join('\n');
+
+        fuenteTextoEl.textContent = `${data.index} usa ${data.source}.`;
+        fuenteLinkEl.href = sourceMap[data.index]?.url || '#';
+        fuenteLinkEl.textContent = `Abrir fuente oficial de ${data.index}`;
+        fuenteNotaEl.textContent = `${data.source_note} último dato publicado al mes ${data.current_month}.`;
+      } catch (error) {
+        resumenEl.textContent = 'No pude conectar con el backend local.';
+        fuenteNotaEl.textContent = String(error);
+      } finally {
+        calculateBtn.disabled = false;
+        calculateBtn.textContent = 'Actualizar';
+      }
+    }
+
+    function resetForm() {
+      alquilerEl.value = 300000;
+      inicioMesEl.value = todayMonthValue();
+      periodoEl.value = '12';
+      setActiveIndex('ICL');
+      calculate();
+    }
+
+    document.getElementById('limpiar').addEventListener('click', resetForm);
+    calculateBtn.addEventListener('click', calculate);
+    [alquilerEl, inicioMesEl, periodoEl].forEach((el) => {
+      el.addEventListener('input', calculate);
+      el.addEventListener('change', calculate);
+    });
+    indexRow.addEventListener('click', (event) => {
+      const btn = event.target.closest('.index-btn');
+      if (!btn) return;
+      setActiveIndex(btn.dataset.index);
+    });
+
+    resetForm();
+  </script>
+</body>
+</html>

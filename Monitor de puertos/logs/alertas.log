@@ -1,0 +1,3834 @@
+2026-04-27 22:08:32 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 1.1.1.1
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 54813
+Estado TCP: ESTABLISHED
+PID: 23932
+Aplicacion: powershell
+Veces vista: 1
+Requiere aprobacion manual para pasar a BASE.
+2026-04-27 22:08:32 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 172.66.147.243
+Puerto remoto: 80
+IP local: 192.168.100.8
+Puerto local: 54815
+Estado TCP: ESTABLISHED
+PID: 23932
+Aplicacion: powershell
+Veces vista: 1
+Requiere aprobacion manual para pasar a BASE.
+2026-04-27 22:12:37 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 8.8.8.8
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 54834
+Estado TCP: ESTABLISHED
+PID: 23932
+Aplicacion: powershell
+Veces vista: 1
+Requiere aprobacion manual para pasar a BASE.
+2026-04-27 22:23:02 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 9.9.9.9
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 50792
+Estado TCP: ESTABLISHED
+PID: 19672
+Aplicacion: powershell
+Veces vista: 1
+Requiere aprobacion manual para pasar a BASE.
+2026-04-28 16:28:03 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.0.198
+Puerto local: 57779
+Estado TCP: ESTABLISHED
+PID: 30500
+Aplicacion: powershell
+Veces vista: 1
+Requiere aprobacion manual para pasar a BASE.
+2026-04-29 01:52:21 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 59337
+Estado TCP: ESTABLISHED
+PID: 12304
+Aplicacion: powershell
+Veces vista: 3
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-03 23:28:08 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 49672
+Estado TCP: ESTABLISHED
+PID: 31856
+Aplicacion: powershell
+Veces vista: 4
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-04 08:45:29 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.114
+Puerto local: 62212
+Estado TCP: ESTABLISHED
+PID: 25524
+Aplicacion: powershell
+Veces vista: 5
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-06 09:56:35 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.118
+Puerto local: 49824
+Estado TCP: ESTABLISHED
+PID: 28348
+Aplicacion: powershell
+Veces vista: 6
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-06 10:09:00 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.118
+Puerto local: 64913
+Estado TCP: ESTABLISHED
+PID: 27680
+Aplicacion: powershell
+Veces vista: 10
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-07 08:39:22 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.124
+Puerto local: 62089
+Estado TCP: ESTABLISHED
+PID: 13136
+Aplicacion: powershell
+Veces vista: 11
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-07 21:10:14 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 57085
+Estado TCP: ESTABLISHED
+PID: 14872
+Aplicacion: powershell
+Veces vista: 13
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-07 21:20:12 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 63771
+Estado TCP: ESTABLISHED
+PID: 14872
+Aplicacion: powershell
+Veces vista: 14
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-07 21:30:12 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 60406
+Estado TCP: ESTABLISHED
+PID: 14872
+Aplicacion: powershell
+Veces vista: 15
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-07 21:40:13 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 54954
+Estado TCP: ESTABLISHED
+PID: 14872
+Aplicacion: powershell
+Veces vista: 16
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-07 21:50:15 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 61742
+Estado TCP: ESTABLISHED
+PID: 14872
+Aplicacion: powershell
+Veces vista: 17
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-07 22:00:45 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 52605
+Estado TCP: ESTABLISHED
+PID: 14872
+Aplicacion: powershell
+Veces vista: 18
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-07 22:10:43 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 60136
+Estado TCP: ESTABLISHED
+PID: 14872
+Aplicacion: powershell
+Veces vista: 19
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-07 22:20:42 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 55744
+Estado TCP: ESTABLISHED
+PID: 14872
+Aplicacion: powershell
+Veces vista: 20
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-07 22:30:45 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 65149
+Estado TCP: ESTABLISHED
+PID: 14872
+Aplicacion: powershell
+Veces vista: 21
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-07 22:40:44 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 59317
+Estado TCP: ESTABLISHED
+PID: 14872
+Aplicacion: powershell
+Veces vista: 22
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-07 22:50:45 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 60353
+Estado TCP: ESTABLISHED
+PID: 14872
+Aplicacion: powershell
+Veces vista: 23
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-07 23:00:46 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 49671
+Estado TCP: ESTABLISHED
+PID: 14872
+Aplicacion: powershell
+Veces vista: 24
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-13 15:54:10 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 60327
+Estado TCP: ESTABLISHED
+PID: 4708
+Aplicacion: powershell
+Veces vista: 47
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-15 11:15:34 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.151
+Puerto local: 51068
+Estado TCP: ESTABLISHED
+PID: 12372
+Aplicacion: powershell
+Veces vista: 48
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-17 20:21:58 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 61554
+Estado TCP: ESTABLISHED
+PID: 18680
+Aplicacion: powershell
+Veces vista: 49
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-18 09:24:56 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.123
+Puerto local: 54457
+Estado TCP: ESTABLISHED
+PID: 6948
+Aplicacion: powershell
+Veces vista: 50
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-19 09:18:59 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.116
+Puerto local: 57387
+Estado TCP: ESTABLISHED
+PID: 19108
+Aplicacion: powershell
+Veces vista: 51
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-21 13:14:39 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.122
+Puerto local: 61739
+Estado TCP: ESTABLISHED
+PID: 18872
+Aplicacion: powershell
+Veces vista: 52
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-22 10:35:37 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.130
+Puerto local: 61370
+Estado TCP: ESTABLISHED
+PID: 14008
+Aplicacion: powershell
+Veces vista: 53
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-24 21:01:53 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 62154
+Estado TCP: ESTABLISHED
+PID: 4552
+Aplicacion: powershell
+Veces vista: 54
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-27 08:45:41 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.118
+Puerto local: 49729
+Estado TCP: ESTABLISHED
+PID: 2964
+Aplicacion: powershell
+Veces vista: 55
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-27 22:35:29 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 59647
+Estado TCP: ESTABLISHED
+PID: 2964
+Aplicacion: powershell
+Veces vista: 56
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-27 22:45:27 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 57183
+Estado TCP: ESTABLISHED
+PID: 2964
+Aplicacion: powershell
+Veces vista: 57
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-28 10:01:13 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 54276
+Estado TCP: ESTABLISHED
+PID: 2964
+Aplicacion: powershell
+Veces vista: 58
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-28 10:11:15 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 55585
+Estado TCP: ESTABLISHED
+PID: 2964
+Aplicacion: powershell
+Veces vista: 59
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-28 10:21:14 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 54691
+Estado TCP: ESTABLISHED
+PID: 2964
+Aplicacion: powershell
+Veces vista: 60
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-28 10:31:16 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 61443
+Estado TCP: ESTABLISHED
+PID: 2964
+Aplicacion: powershell
+Veces vista: 61
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-28 10:41:16 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 52918
+Estado TCP: ESTABLISHED
+PID: 2964
+Aplicacion: powershell
+Veces vista: 62
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-28 10:51:16 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 55282
+Estado TCP: ESTABLISHED
+PID: 2964
+Aplicacion: powershell
+Veces vista: 63
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-28 11:01:18 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 59938
+Estado TCP: ESTABLISHED
+PID: 2964
+Aplicacion: powershell
+Veces vista: 64
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-28 11:11:18 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 62382
+Estado TCP: ESTABLISHED
+PID: 2964
+Aplicacion: powershell
+Veces vista: 65
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-28 14:16:06 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 50824
+Estado TCP: ESTABLISHED
+PID: 2964
+Aplicacion: powershell
+Veces vista: 66
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-28 14:26:02 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 58824
+Estado TCP: ESTABLISHED
+PID: 2964
+Aplicacion: powershell
+Veces vista: 67
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-28 14:36:51 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 51499
+Estado TCP: ESTABLISHED
+PID: 2964
+Aplicacion: powershell
+Veces vista: 68
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-28 14:59:48 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 64457
+Estado TCP: ESTABLISHED
+PID: 2964
+Aplicacion: powershell
+Veces vista: 69
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-29 10:04:51 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.128
+Puerto local: 63505
+Estado TCP: ESTABLISHED
+PID: 2964
+Aplicacion: powershell
+Veces vista: 90
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-29 10:14:53 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.128
+Puerto local: 62559
+Estado TCP: ESTABLISHED
+PID: 2964
+Aplicacion: powershell
+Veces vista: 91
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-29 10:24:51 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.128
+Puerto local: 62247
+Estado TCP: ESTABLISHED
+PID: 2964
+Aplicacion: powershell
+Veces vista: 92
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-29 10:34:53 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.128
+Puerto local: 63942
+Estado TCP: ESTABLISHED
+PID: 2964
+Aplicacion: powershell
+Veces vista: 93
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-29 10:44:55 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.128
+Puerto local: 51045
+Estado TCP: ESTABLISHED
+PID: 2964
+Aplicacion: powershell
+Veces vista: 94
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-29 10:54:56 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.128
+Puerto local: 54295
+Estado TCP: ESTABLISHED
+PID: 2964
+Aplicacion: powershell
+Veces vista: 95
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-29 11:04:59 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.128
+Puerto local: 57420
+Estado TCP: ESTABLISHED
+PID: 2964
+Aplicacion: powershell
+Veces vista: 96
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-29 11:14:56 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.128
+Puerto local: 58250
+Estado TCP: ESTABLISHED
+PID: 2964
+Aplicacion: powershell
+Veces vista: 97
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-29 11:24:55 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.128
+Puerto local: 54504
+Estado TCP: ESTABLISHED
+PID: 2964
+Aplicacion: powershell
+Veces vista: 98
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-29 11:34:56 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.128
+Puerto local: 57177
+Estado TCP: ESTABLISHED
+PID: 2964
+Aplicacion: powershell
+Veces vista: 99
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-29 11:44:59 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.128
+Puerto local: 61519
+Estado TCP: ESTABLISHED
+PID: 2964
+Aplicacion: powershell
+Veces vista: 100
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-29 11:55:01 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.128
+Puerto local: 52263
+Estado TCP: ESTABLISHED
+PID: 2964
+Aplicacion: powershell
+Veces vista: 101
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-30 11:07:18 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 50363
+Estado TCP: ESTABLISHED
+PID: 2964
+Aplicacion: powershell
+Veces vista: 114
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-30 20:57:42 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 54070
+Estado TCP: ESTABLISHED
+PID: 13656
+Aplicacion: powershell
+Veces vista: 116
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-05-31 13:18:47 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 63189
+Estado TCP: ESTABLISHED
+PID: 13656
+Aplicacion: powershell
+Veces vista: 117
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-06-01 12:28:31 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.123
+Puerto local: 62053
+Estado TCP: ESTABLISHED
+PID: 12624
+Aplicacion: powershell
+Veces vista: 118
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-06-09 15:23:45 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.0.197
+Puerto local: 52529
+Estado TCP: ESTABLISHED
+PID: 12624
+Aplicacion: powershell
+Veces vista: 119
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-06-10 17:38:00 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 51085
+Estado TCP: ESTABLISHED
+PID: 7228
+Aplicacion: powershell
+Veces vista: 120
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-06-18 08:46:46 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.124
+Puerto local: 59403
+Estado TCP: ESTABLISHED
+PID: 7228
+Aplicacion: powershell
+Veces vista: 121
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-06-19 16:37:21 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 200.25.62.5
+Puerto remoto: 443
+IP local: 192.168.0.197
+Puerto local: 56137
+Estado TCP: ESTABLISHED
+PID: 35732
+Aplicacion: powershell
+Veces vista: 1
+Requiere aprobacion manual para pasar a BASE.
+2026-06-21 19:58:11 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 49817
+Estado TCP: ESTABLISHED
+PID: 18492
+Aplicacion: powershell
+Veces vista: 122
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-06-26 09:18:26 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.126
+Puerto local: 50920
+Estado TCP: ESTABLISHED
+PID: 15804
+Aplicacion: powershell
+Veces vista: 123
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-06-26 17:02:32 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.0.200
+Puerto local: 63288
+Estado TCP: ESTABLISHED
+PID: 15804
+Aplicacion: powershell
+Veces vista: 124
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-06-27 11:17:45 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 61788
+Estado TCP: ESTABLISHED
+PID: 15804
+Aplicacion: powershell
+Veces vista: 125
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-06-27 11:27:43 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 55491
+Estado TCP: ESTABLISHED
+PID: 15804
+Aplicacion: powershell
+Veces vista: 126
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-06-28 19:56:39 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 61510
+Estado TCP: ESTABLISHED
+PID: 15804
+Aplicacion: powershell
+Veces vista: 127
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-06-28 20:06:34 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 60265
+Estado TCP: ESTABLISHED
+PID: 15804
+Aplicacion: powershell
+Veces vista: 128
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-06-28 20:16:35 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 56462
+Estado TCP: ESTABLISHED
+PID: 15804
+Aplicacion: powershell
+Veces vista: 129
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-06-28 20:26:35 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 61253
+Estado TCP: ESTABLISHED
+PID: 15804
+Aplicacion: powershell
+Veces vista: 130
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-06-29 09:25:39 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.123
+Puerto local: 60129
+Estado TCP: ESTABLISHED
+PID: 15804
+Aplicacion: powershell
+Veces vista: 131
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-06-29 09:35:30 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.123
+Puerto local: 57497
+Estado TCP: ESTABLISHED
+PID: 15804
+Aplicacion: powershell
+Veces vista: 132
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-06-29 09:45:31 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.123
+Puerto local: 59124
+Estado TCP: ESTABLISHED
+PID: 15804
+Aplicacion: powershell
+Veces vista: 133
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-06-29 09:55:41 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.123
+Puerto local: 60253
+Estado TCP: ESTABLISHED
+PID: 15804
+Aplicacion: powershell
+Veces vista: 134
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-06-29 10:05:34 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.123
+Puerto local: 50622
+Estado TCP: ESTABLISHED
+PID: 15804
+Aplicacion: powershell
+Veces vista: 135
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-06-29 10:15:38 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.123
+Puerto local: 58297
+Estado TCP: ESTABLISHED
+PID: 15804
+Aplicacion: powershell
+Veces vista: 136
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-06-29 10:25:36 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.123
+Puerto local: 54755
+Estado TCP: ESTABLISHED
+PID: 15804
+Aplicacion: powershell
+Veces vista: 137
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-06-29 10:35:41 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.123
+Puerto local: 54217
+Estado TCP: ESTABLISHED
+PID: 15804
+Aplicacion: powershell
+Veces vista: 138
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-01 09:01:51 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.138
+Puerto local: 58433
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 155
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-01 15:50:03 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.138
+Puerto local: 56294
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 156
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-01 16:00:00 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.138
+Puerto local: 50493
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 157
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-01 16:09:59 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.138
+Puerto local: 59842
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 158
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-01 16:19:54 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.138
+Puerto local: 65254
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 159
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-01 16:29:56 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.138
+Puerto local: 58590
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 160
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-01 16:39:57 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.138
+Puerto local: 54802
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 161
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-01 19:58:22 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 58662
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 162
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-01 20:28:14 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 62713
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 163
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-01 20:38:14 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 58757
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 164
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-01 20:48:14 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 52732
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 165
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-01 20:58:13 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 56780
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 166
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-02 09:19:45 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.146
+Puerto local: 55471
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 195
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-02 09:29:44 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.146
+Puerto local: 55353
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 196
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-02 09:52:11 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.146
+Puerto local: 49299
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 197
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-02 10:02:01 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.146
+Puerto local: 57069
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 198
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-02 10:12:03 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.146
+Puerto local: 54608
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 199
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-02 10:22:08 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.146
+Puerto local: 61361
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 200
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-02 10:32:08 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.146
+Puerto local: 53100
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 201
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-02 10:42:08 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.146
+Puerto local: 58508
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 202
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-02 10:52:10 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.146
+Puerto local: 49672
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 203
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-02 11:23:50 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.146
+Puerto local: 60225
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 204
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-02 11:52:38 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.146
+Puerto local: 55735
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 205
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-02 12:02:41 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.146
+Puerto local: 62041
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 206
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-03 09:29:24 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.148
+Puerto local: 49721
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 256
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-03 09:39:24 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.148
+Puerto local: 50827
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 257
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-03 09:49:27 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.148
+Puerto local: 50786
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 258
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-03 09:59:26 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.148
+Puerto local: 53550
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 259
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-03 10:09:27 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.148
+Puerto local: 57544
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 260
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-03 10:19:27 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.148
+Puerto local: 57390
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 261
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-03 10:29:31 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.148
+Puerto local: 50711
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 262
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-03 10:39:31 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.148
+Puerto local: 53415
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 263
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-03 10:49:28 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.148
+Puerto local: 60228
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 264
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-03 10:59:29 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.148
+Puerto local: 64316
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 265
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-03 11:09:29 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.148
+Puerto local: 55807
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 266
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-03 11:19:28 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.148
+Puerto local: 64852
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 267
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-04 11:41:27 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 51103
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 289
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-04 11:51:23 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 59936
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 290
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-04 12:01:24 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 49741
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 291
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-04 12:11:22 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 64020
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 292
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-04 12:21:19 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 55734
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 293
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-04 12:31:23 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 57707
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 294
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-04 12:41:23 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 56033
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 295
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-04 13:18:14 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 63441
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 296
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-04 13:28:19 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 56975
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 297
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-04 13:38:20 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 64401
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 298
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-04 13:48:20 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 57271
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 299
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-04 13:58:16 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 65116
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 300
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-05 21:28:16 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 52609
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 304
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-05 21:38:16 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 53880
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 305
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-05 21:48:19 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 53894
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 306
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-05 21:58:19 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 65221
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 307
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-05 22:08:19 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 55014
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 308
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-05 22:18:22 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 54665
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 309
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-06 08:44:34 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.127
+Puerto local: 51895
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 310
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-06 08:54:46 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.127
+Puerto local: 50784
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 311
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-06 09:14:36 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.127
+Puerto local: 50907
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 313
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-06 09:24:36 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.127
+Puerto local: 62362
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 314
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-06 09:34:45 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.127
+Puerto local: 59129
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 315
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-06 10:08:31 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.127
+Puerto local: 50366
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 316
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-07 08:52:00 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.135
+Puerto local: 53723
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 350
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-07 09:01:56 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.135
+Puerto local: 54528
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 351
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-07 09:11:56 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.135
+Puerto local: 59583
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 352
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-07 09:22:00 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.135
+Puerto local: 58520
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 353
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-07 09:32:00 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.135
+Puerto local: 62101
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 354
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-07 09:42:01 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.135
+Puerto local: 62372
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 355
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-07 09:52:04 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.135
+Puerto local: 56676
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 356
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-07 10:02:02 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.135
+Puerto local: 64112
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 357
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-07 10:12:02 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.135
+Puerto local: 62141
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 358
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-07 10:22:03 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.135
+Puerto local: 51699
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 359
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-07 10:32:03 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.135
+Puerto local: 60687
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 360
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-07 10:42:05 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.135
+Puerto local: 63707
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 361
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-08 09:00:16 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.142
+Puerto local: 53439
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 391
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-08 10:16:26 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.142
+Puerto local: 59694
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 392
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-08 10:26:23 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.142
+Puerto local: 55183
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 393
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-08 11:06:29 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.142
+Puerto local: 58676
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 394
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-08 11:16:34 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.142
+Puerto local: 49845
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 395
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-08 11:26:27 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.142
+Puerto local: 60639
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 396
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-08 11:36:37 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.142
+Puerto local: 60042
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 397
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-08 11:46:29 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.142
+Puerto local: 65219
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 398
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-08 11:56:30 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.142
+Puerto local: 55872
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 399
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-08 12:06:31 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.142
+Puerto local: 51651
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 400
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-08 12:16:30 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.142
+Puerto local: 58663
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 401
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-08 12:26:35 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.142
+Puerto local: 64346
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 402
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-09 09:05:20 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.150
+Puerto local: 56209
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 423
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-09 09:15:24 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.150
+Puerto local: 61628
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 424
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-09 09:25:19 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.150
+Puerto local: 55411
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 425
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-09 11:37:39 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.150
+Puerto local: 56313
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 426
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-09 11:47:39 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.150
+Puerto local: 51672
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 427
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-09 12:08:28 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.150
+Puerto local: 64697
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 428
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-09 12:18:28 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.150
+Puerto local: 58699
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 429
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-09 13:04:15 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.150
+Puerto local: 53514
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 430
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-09 13:14:16 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.150
+Puerto local: 50839
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 431
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-10 08:51:26 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.151
+Puerto local: 50083
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 432
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-10 09:01:26 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.151
+Puerto local: 58555
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 433
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-10 09:11:27 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.151
+Puerto local: 58603
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 434
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-10 09:21:30 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.151
+Puerto local: 58640
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 435
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-10 09:31:30 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.151
+Puerto local: 53405
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 436
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-10 09:44:43 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.151
+Puerto local: 53350
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 437
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-10 10:22:16 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.151
+Puerto local: 61552
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 438
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-10 10:32:17 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.151
+Puerto local: 53272
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 439
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-10 10:52:16 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.151
+Puerto local: 51597
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 440
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-10 11:02:15 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.151
+Puerto local: 51808
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 441
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-10 11:12:15 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.151
+Puerto local: 54585
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 442
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-10 11:22:16 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.151
+Puerto local: 62761
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 443
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-10 11:32:23 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.151
+Puerto local: 50318
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 444
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-10 11:42:22 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.151
+Puerto local: 62270
+Estado TCP: ESTABLISHED
+PID: 11624
+Aplicacion: powershell
+Veces vista: 445
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-17 08:36:53 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.160
+Puerto local: 49743
+Estado TCP: ESTABLISHED
+PID: 2368
+Aplicacion: powershell
+Veces vista: 475
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-25 10:56:05 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 59382
+Estado TCP: ESTABLISHED
+PID: 2368
+Aplicacion: powershell
+Veces vista: 476
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-25 11:16:51 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 62984
+Estado TCP: ESTABLISHED
+PID: 2368
+Aplicacion: powershell
+Veces vista: 477
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-25 11:26:50 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 58617
+Estado TCP: ESTABLISHED
+PID: 2368
+Aplicacion: powershell
+Veces vista: 478
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-25 11:36:54 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 54545
+Estado TCP: ESTABLISHED
+PID: 2368
+Aplicacion: powershell
+Veces vista: 479
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-25 11:46:56 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 55191
+Estado TCP: ESTABLISHED
+PID: 2368
+Aplicacion: powershell
+Veces vista: 480
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-25 11:56:51 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 61323
+Estado TCP: ESTABLISHED
+PID: 2368
+Aplicacion: powershell
+Veces vista: 481
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-25 12:06:52 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 59217
+Estado TCP: ESTABLISHED
+PID: 2368
+Aplicacion: powershell
+Veces vista: 482
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-25 12:16:50 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 51340
+Estado TCP: ESTABLISHED
+PID: 2368
+Aplicacion: powershell
+Veces vista: 483
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-25 12:26:52 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 54074
+Estado TCP: ESTABLISHED
+PID: 2368
+Aplicacion: powershell
+Veces vista: 484
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-25 16:52:23 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 51705
+Estado TCP: ESTABLISHED
+PID: 2368
+Aplicacion: powershell
+Veces vista: 485
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-25 17:02:32 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 49990
+Estado TCP: ESTABLISHED
+PID: 2368
+Aplicacion: powershell
+Veces vista: 486
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-25 17:26:10 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 63273
+Estado TCP: ESTABLISHED
+PID: 2368
+Aplicacion: powershell
+Veces vista: 487
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-26 22:29:57 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 60965
+Estado TCP: ESTABLISHED
+PID: 2368
+Aplicacion: powershell
+Veces vista: 499
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-26 22:39:31 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 60965
+Estado TCP: ESTABLISHED
+PID: 2368
+Aplicacion: powershell
+Veces vista: 500
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-26 22:49:39 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 65498
+Estado TCP: ESTABLISHED
+PID: 2368
+Aplicacion: powershell
+Veces vista: 501
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-26 22:59:31 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 54314
+Estado TCP: ESTABLISHED
+PID: 2368
+Aplicacion: powershell
+Veces vista: 502
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-26 23:09:29 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 64359
+Estado TCP: ESTABLISHED
+PID: 2368
+Aplicacion: powershell
+Veces vista: 503
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-26 23:19:33 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 58977
+Estado TCP: ESTABLISHED
+PID: 2368
+Aplicacion: powershell
+Veces vista: 504
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-26 23:29:37 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 56187
+Estado TCP: ESTABLISHED
+PID: 2368
+Aplicacion: powershell
+Veces vista: 505
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-26 23:39:41 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 51352
+Estado TCP: ESTABLISHED
+PID: 2368
+Aplicacion: powershell
+Veces vista: 506
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-27 08:57:40 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.128
+Puerto local: 52205
+Estado TCP: ESTABLISHED
+PID: 2368
+Aplicacion: powershell
+Veces vista: 507
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-27 09:18:21 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.128
+Puerto local: 52048
+Estado TCP: ESTABLISHED
+PID: 2368
+Aplicacion: powershell
+Veces vista: 508
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-27 09:28:25 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.128
+Puerto local: 54593
+Estado TCP: ESTABLISHED
+PID: 2368
+Aplicacion: powershell
+Veces vista: 509
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-07-27 09:38:23 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.128
+Puerto local: 64419
+Estado TCP: ESTABLISHED
+PID: 2368
+Aplicacion: powershell
+Veces vista: 510
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-03 13:24:44 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.130
+Puerto local: 62198
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 524
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-03 13:43:56 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.130
+Puerto local: 61985
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 526
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-03 13:53:56 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.130
+Puerto local: 61893
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 527
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-03 14:04:01 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.130
+Puerto local: 59884
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 528
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-03 14:14:01 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.130
+Puerto local: 64609
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 529
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-03 14:59:36 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.221
+Puerto local: 63312
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 530
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-03 15:09:43 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.221
+Puerto local: 60194
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 531
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-03 15:19:43 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.221
+Puerto local: 57746
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 532
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-03 15:29:42 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.221
+Puerto local: 62516
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 533
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-03 15:39:50 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.221
+Puerto local: 56790
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 534
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-03 15:49:51 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.221
+Puerto local: 51542
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 535
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-03 15:59:42 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.221
+Puerto local: 49374
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 536
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-04 15:14:08 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.134
+Puerto local: 56345
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 574
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-04 15:24:11 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.134
+Puerto local: 64909
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 575
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-04 15:34:08 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.134
+Puerto local: 50534
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 576
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-04 15:44:14 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.134
+Puerto local: 64739
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 577
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-04 15:54:17 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.134
+Puerto local: 59214
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 578
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-04 16:04:22 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.134
+Puerto local: 57548
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 579
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-04 16:14:12 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.134
+Puerto local: 54684
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 580
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-04 16:24:15 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.134
+Puerto local: 61686
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 581
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-04 16:34:08 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.134
+Puerto local: 50788
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 582
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-04 16:44:06 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.134
+Puerto local: 49788
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 583
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-04 16:54:11 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.134
+Puerto local: 49671
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 584
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-04 17:04:15 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.134
+Puerto local: 55817
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 585
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-05 15:21:52 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.162
+Puerto local: 57435
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 617
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-05 15:31:58 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.162
+Puerto local: 54752
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 618
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-05 15:41:53 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.162
+Puerto local: 59387
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 619
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-05 15:51:56 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.162
+Puerto local: 54678
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 620
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-05 16:01:58 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.162
+Puerto local: 51391
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 621
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-05 16:11:52 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.162
+Puerto local: 57064
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 622
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-05 16:22:05 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.162
+Puerto local: 52313
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 623
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-05 16:32:00 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.162
+Puerto local: 63374
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 624
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-05 16:42:05 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.162
+Puerto local: 60868
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 625
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-05 16:52:00 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.162
+Puerto local: 51992
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 626
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-05 17:02:00 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.162
+Puerto local: 57469
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 627
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-05 17:12:00 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.162
+Puerto local: 58782
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 628
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-06 15:24:42 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.131
+Puerto local: 61921
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 677
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-06 15:34:45 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.131
+Puerto local: 61444
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 678
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-06 15:44:44 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.131
+Puerto local: 62534
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 679
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-06 15:54:43 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.131
+Puerto local: 61915
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 680
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-06 16:04:45 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.131
+Puerto local: 54482
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 681
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-06 16:14:42 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.131
+Puerto local: 60881
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 682
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-06 16:24:46 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.131
+Puerto local: 62851
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 683
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-06 16:34:34 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.131
+Puerto local: 51775
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 684
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-06 16:54:34 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.131
+Puerto local: 59267
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 685
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-06 17:04:38 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.131
+Puerto local: 58760
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 686
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-06 17:14:38 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.131
+Puerto local: 61570
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 687
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-06 17:24:34 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.131
+Puerto local: 61992
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 688
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-07 15:29:42 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.119
+Puerto local: 58953
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 736
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-07 15:39:46 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.119
+Puerto local: 56732
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 737
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-07 15:49:43 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.119
+Puerto local: 50771
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 738
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-07 15:59:47 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.119
+Puerto local: 57761
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 739
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-07 16:09:40 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.119
+Puerto local: 55675
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 740
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-07 16:39:49 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.119
+Puerto local: 53515
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 741
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-07 16:59:47 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.119
+Puerto local: 59025
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 742
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-07 17:19:56 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.119
+Puerto local: 58766
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 744
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-07 17:29:50 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.119
+Puerto local: 56295
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 745
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-07 17:39:51 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.119
+Puerto local: 52645
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 746
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-07 17:49:48 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.119
+Puerto local: 53848
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 747
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-07 17:59:41 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.119
+Puerto local: 54127
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 748
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-08 15:32:04 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 54931
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 775
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-08 15:42:03 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 51529
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 776
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-08 15:52:03 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 51608
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 777
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-08 16:02:03 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 63502
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 778
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-08 16:12:02 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 58155
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 779
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-08 16:22:07 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 56928
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 780
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-08 16:32:07 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 54413
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 781
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-08 16:42:19 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 49675
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 782
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-08 16:52:20 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 50197
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 783
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-08 17:02:12 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 50521
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 784
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-08 17:12:17 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 53862
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 785
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-08 17:22:11 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 62592
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 786
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-09 15:34:43 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 63289
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 855
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-09 15:44:45 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 56670
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 856
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-09 15:54:45 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 59194
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 857
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-09 16:04:44 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 63392
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 858
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-09 16:14:44 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 56739
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 859
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-09 16:24:45 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 59667
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 860
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-09 16:34:45 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 61842
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 861
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-09 16:44:58 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 56418
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 862
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-09 17:04:52 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 51930
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 863
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-09 17:24:55 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 57981
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 864
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-09 17:34:53 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 50525
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 865
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-09 17:44:54 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 192.168.100.8
+Puerto local: 62915
+Estado TCP: ESTABLISHED
+PID: 14116
+Aplicacion: powershell
+Veces vista: 866
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-11 10:01:54 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.130
+Puerto local: 50360
+Estado TCP: ESTABLISHED
+PID: 20808
+Aplicacion: powershell
+Veces vista: 881
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-11 10:11:53 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.130
+Puerto local: 54646
+Estado TCP: ESTABLISHED
+PID: 20808
+Aplicacion: powershell
+Veces vista: 882
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-11 10:21:52 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.130
+Puerto local: 59802
+Estado TCP: ESTABLISHED
+PID: 20808
+Aplicacion: powershell
+Veces vista: 883
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-11 10:31:56 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.130
+Puerto local: 59351
+Estado TCP: ESTABLISHED
+PID: 20808
+Aplicacion: powershell
+Veces vista: 884
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-11 10:51:58 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.130
+Puerto local: 55039
+Estado TCP: ESTABLISHED
+PID: 20808
+Aplicacion: powershell
+Veces vista: 885
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-11 11:02:00 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.130
+Puerto local: 59378
+Estado TCP: ESTABLISHED
+PID: 20808
+Aplicacion: powershell
+Veces vista: 886
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-11 11:11:57 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.130
+Puerto local: 62425
+Estado TCP: ESTABLISHED
+PID: 20808
+Aplicacion: powershell
+Veces vista: 887
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-11 11:21:55 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.130
+Puerto local: 64837
+Estado TCP: ESTABLISHED
+PID: 20808
+Aplicacion: powershell
+Veces vista: 888
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-11 11:31:56 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.130
+Puerto local: 53271
+Estado TCP: ESTABLISHED
+PID: 20808
+Aplicacion: powershell
+Veces vista: 889
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-11 11:41:59 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.130
+Puerto local: 64032
+Estado TCP: ESTABLISHED
+PID: 20808
+Aplicacion: powershell
+Veces vista: 890
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-11 11:52:02 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.130
+Puerto local: 53417
+Estado TCP: ESTABLISHED
+PID: 20808
+Aplicacion: powershell
+Veces vista: 891
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-11 12:02:03 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.19.130
+Puerto local: 52777
+Estado TCP: ESTABLISHED
+PID: 20808
+Aplicacion: powershell
+Veces vista: 892
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-12 10:11:18 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.136
+Puerto local: 50493
+Estado TCP: ESTABLISHED
+PID: 20808
+Aplicacion: powershell
+Veces vista: 926
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-12 10:21:20 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.136
+Puerto local: 59973
+Estado TCP: ESTABLISHED
+PID: 20808
+Aplicacion: powershell
+Veces vista: 927
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-12 10:31:49 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.136
+Puerto local: 50918
+Estado TCP: ESTABLISHED
+PID: 20808
+Aplicacion: powershell
+Veces vista: 928
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-12 11:08:04 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.136
+Puerto local: 49385
+Estado TCP: ESTABLISHED
+PID: 20808
+Aplicacion: powershell
+Veces vista: 929
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-12 11:18:01 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.136
+Puerto local: 55314
+Estado TCP: ESTABLISHED
+PID: 20808
+Aplicacion: powershell
+Veces vista: 930
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-12 11:28:01 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.136
+Puerto local: 62243
+Estado TCP: ESTABLISHED
+PID: 20808
+Aplicacion: powershell
+Veces vista: 931
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-12 11:38:05 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.136
+Puerto local: 51588
+Estado TCP: ESTABLISHED
+PID: 20808
+Aplicacion: powershell
+Veces vista: 932
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-12 11:48:15 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.136
+Puerto local: 56466
+Estado TCP: ESTABLISHED
+PID: 20808
+Aplicacion: powershell
+Veces vista: 933
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.
+2026-08-12 12:08:05 | ALERTA DE RED
+Estado monitor: SOSPECHOSA
+IP remota: 149.154.166.110
+Puerto remoto: 443
+IP local: 172.19.18.136
+Puerto local: 49385
+Estado TCP: ESTABLISHED
+PID: 20808
+Aplicacion: powershell
+Veces vista: 935
+Ya fue vista antes y sigue fuera de BASE.
+Requiere aprobacion manual para pasar a BASE.

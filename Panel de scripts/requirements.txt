@@ -1,0 +1,5 @@
+flask
+pandas
+openpyxl
+Pillow
+pywin32; sys_platform == 'win32'
